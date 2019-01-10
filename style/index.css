@@ -1,0 +1,125 @@
+nav {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+body {
+    font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro";
+    margin: 0px;
+    padding: 0px;
+    background: #FBFBFB;
+}
+
+aside {
+    width: 220px;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar {
+    height: 100%;
+    width: 180px;
+    float: left;
+    margin: 6px;
+    display: inline-block;
+    background: #FFFFFF;
+}
+
+div.category {
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #555555;
+}
+
+div.category > * {
+    height: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+div.category > img {
+    height: 22px;
+    width: 22px;
+    margin: 9px 10px;
+    display: block;
+}
+
+div.category > .category_name {
+    height: 14px;
+    margin: 13px 00px;
+    font-size: 14px;
+    display: block;
+}
+
+div#main {
+    width: calc(100% - 220px - 180px - 30px);
+    display: inline-block;
+    margin: 6px;
+}
+
+.question {
+    margin: 4px;
+    background: #FFFFFF;
+    display: inline-block;
+}
+
+.question > * {
+    margin: 4px;
+    background: #FFFFFF;
+}
+
+.question > .icon {
+    float: left;
+}
+
+.question > .info {
+    float: left;
+}
+
+.question > .likeandcomment {
+    float: right;
+}
+
+.question > . {
+    display: block;
+}
+
+.tag {
+    width: 65px;
+    height: 21px;
+    background: #ACE698;
+    border-radius: 3px;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+footer {
+    color: #FFFFFF;
+    background: #555555;
+    padding: 30px 100px 30px 100px;
+}
+
+footer > ul {
+    list-style: none;
+    float: left;
+}
+
+footer > li {
+}
+
+.clear {
+    clear: both;
+}
+
+.center {
+    text-align: center;
+}

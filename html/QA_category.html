@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../style/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+        window.onload = () => {
+            let category = new Vue({
+                el: '#category',
+                data: {
+                    categories: [
+                        {category: "認知症", color: {background: "#DE7171"}, img_source: "/img/category/icon_recognition.png"},
+                        {category: "介護保険", color: {background: "#DE71B9"}, img_source: "/img/category/icon_insurance.png"},
+                        {category: "要介護認定", color: {background: "#CF71DE"}, img_source: "/img/category/icon_certification.png"},
+                        {category: "お金", color: {background: "#DED371"}, img_source: "/img/category/icon_money.png"},
+                        {category: "介護施設", color: {background: "#9ADE71"}, img_source: "/img/category/icon_hospital.png"},
+                        {category: "ケアプラン", color: {background: "#73DE71"}, img_source: "/img/category/icon_care_plan.png"},
+                        {category: "ケアマネージャ", color: {background: "#71DEA3"}, img_source: "/img/category/icon_care_manager.png"},
+                        {category: "リハビリ", color: {background: "#71DEDE"}, img_source: "/img/category/icon_rehabilitation.png"},
+                        {category: "リフォーム", color: {background: "#71B0DE"}, img_source: "/img/category/icon_reform.png"},
+                        {category: "解除器具", color: {background: "#7182DE"}, img_source: "/img/category/icon_device.png"},
+                        {category: "解除疲れ・ストレス", color: {background: "#8771DE"}, img_source: "/img/category/icon_stress.png"},
+                        {category: "入浴排泄ケア", color: {background: "#CF71DE"}, img_source: "/img/category/icon_stress.png"},
+                        {category: "家族", color: {background: "#DEB271"}, img_source: "/img/category/icon_care.png"},
+                        {category: "食事", color: {background: "#D5DE71"}, img_source: "/img/category/icon_family.png"},
+                        {category: "病気", color: {background: "#71DEA3"}, img_source: "/img/category/icon_food.png"},
+                        {category: "元気報告", color: {background: "#71DEDE"}, img_source: "/img/category/icon_report.png"},
+                        {category: "雑談", color: {background: "#87EFEF"}, img_source: "/img/category/icon_chat.png"}]
+                }
+            })
+
+            let question = new Vue({
+                el: '#questions',
+                data: {
+                    questions: [
+                        {
+                            category: "認知症", like: 15, comment: 8, name: "tomotomo", age: 50, target: "(要介護1/90才/男性)",
+                            message: "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+                        }, {
+                            category: "認知症", like: 15, comment: 8, name: "tomotomo", age: 50, target: "(要介護1/90才/男性)",
+                            message: "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+                        }, {
+                            category: "認知症", like: 15, comment: 8, name: "tomotomo", age: 50, target: "(要介護1/90才/男性)",
+                            message: "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+                        }, {
+                            category: "認知症", like: 15, comment: 8, name: "tomotomo", age: 50, target: "(要介護1/90才/男性)",
+                            message: "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+                        }, {
+                            category: "認知症", like: 15, comment: 8, name: "tomotomo", age: 50, target: "(要介護1/90才/男性)",
+                            message: "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+                        }, {
+                            category: "認知症", like: 15, comment: 8, name: "tomotomo", age: 50, target: "(要介護1/90才/男性)",
+                            message: "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+                        }, {
+                            category: "認知症", like: 15, comment: 8, name: "tomotomo", age: 50, target: "(要介護1/90才/男性)",
+                            message: "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+                        }, {
+                            category: "認知症", like: 15, comment: 8, name: "tomotomo", age: 50, target: "(要介護1/90才/男性)",
+                            message: "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+                        }, {
+                            category: "認知症", like: 15, comment: 8, name: "tomotomo", age: 50, target: "(要介護1/90才/男性)",
+                            message: "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+                        }, {
+                            category: "認知症", like: 15, comment: 8, name: "tomotomo", age: 50, target: "(要介護1/90才/男性)",
+                            message: "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+                        }, {
+                            category: "認知症", like: 15, comment: 8, name: "tomotomo", age: 50, target: "(要介護1/90才/男性)",
+                            message: "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+                        }, {
+                            category: "認知症", like: 15, comment: 8, name: "tomotomo", age: 50, target: "(要介護1/90才/男性)",
+                            message: "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+                        }, {
+                            category: "認知症", like: 15, comment: 8, name: "tomotomo", age: 50, target: "(要介護1/90才/男性)",
+                            message: "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+                        }, {
+                            category: "認知症", like: 15, comment: 8, name: "tomotomo", age: 50, target: "(要介護1/90才/男性)",
+                            message: "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+                        },
+                    ]
+                }
+            })
+
+            let footer = new Vue({
+                el: '#footer',
+                data: {
+                    categories1: [
+                        {name: "トップページ", href: "/top"},
+                        {name: "カテゴリ一覧", href: "/top"},
+                        {name: "サイトマップ", href: "/top"},
+                        {name: "運営者情報", href: "/top"},
+                        {name: "プライバシーポリシー", href: "/top"},
+                        {name: "利用規約", href: "/top"},
+                        {name: "お問い合わせ", href: "/top"}
+                    ],
+                    categories2: [
+                        {name: "介護が始まるまでの準備", href: "/top"},
+                        {name: "介護が必要になる原因", href: "/top"},
+                        {name: "ケアプラン", href: "/top"},
+                        {name: "ケアマネージャ", href: "/top"},
+                        {name: "介護保険のサービス・施設の種類", href: "/top"},
+                        {name: "国の保険を利用できる被保険者", href: "/top"},
+                        {name: "給付金・保険んりょう・介護費用", href: "/top"},
+                        {name: "要介護認定の申請・更新", href: "/top"}
+                    ],
+                    categories3: [
+                        {name: "リハビリ", href: "/top"},
+                        {name: "介護リフォーム", href: "/top"},
+                        {name: "介護疲れ・ストレス", href: "/top"},
+                        {name: "介護費用の軽減", href: "/top"},
+                        {name: "入浴・清潔ケア", href: "/top"},
+                        {name: "家族での進め方", href: "/top"},
+                        {name: "排泄・トイレ介助", href: "/top"},
+                        {name: "歩行・移乗の介護", href: "/top"},
+                        {name: "福祉用具・介護用品", href: "/top"},
+                        {name: "認知症", href: "/top"},
+                        {name: "食事サポート", href: "/top"}
+                    ]
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+<nav><img src=""><img src="/img/top.png" height="60" width="161"/></nav>
+<div id="content_wrapper">
+    <div id="sidebar">
+        <div id="category">
+            <div class="category">カテゴリ一覧</div>
+            <div class="category" v-for="category in categories">
+                <span style="width: 8px" :style="category.color"></span>
+                <img :src="category.img_source">
+                <span class="category_name">{{category.category}}</span>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <section id="questions">
+            <div class="question">
+                <span>認知症に関する質問</span>
+                <span>認知症は、老化による物忘れやぼけと勘違いされやすいですが、実際の症状は全く異なります。記憶障害だけでなく、徘徊や暴力など人によって症状は様々であり、認知症についてしっかりと理解しないとご家族の方の介護負担が大きくなってしまいます。多くの方がかかっている認知症とはなにか、認知症の方を介護する上で大切なことについて解説しています。</span>
+            </div>
+            <div class="question" v-for="{category,message,age,name,target,like,comment} in questions">
+                <span class="tag">{{category}}</span>
+                <span class="message">{{message}}</span>
+                <img src="/img/icon.png" class="icon">
+                <div class="info">
+                    <div class="name">{{name}}{{age}}才</div>
+                    <div class="target">{{target}}</div>
+                </div>
+                <span class="likeandcomment">
+                    <img src="/img/like.png"><span class="like">{{like}}</span>
+                    <img src="/img/comment.png"><span class="comment">{{comment}}</span>
+                </span>
+            </div>
+        </section>
+    </div>
+    <aside id="kokoku"><img src="/img/QA_baner.png" height="400" width="200"/></aside>
+</div>
+<footer id="footer">
+    <div>
+        <span>初めての介護について</span>
+        <span>カテゴリ一覧</span>
+    </div>
+    <ul>
+        <li v-for="{name} in categories1"><a>{{name}}</a></li>
+    </ul>
+    <ul>
+        <li v-for="{name} in categories2"><a>{{name}}</a></li>
+    </ul>
+    <ul>
+        <li v-for="{name} in categories3"><a>{{name}}</a></li>
+    </ul>
+    <div class="clear center">
+        ©︎2018 はじめての介護
+    </div>
+</footer>
+</body>
+</html>
