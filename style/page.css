@@ -1,0 +1,11 @@
+.page {
+    margin: 20px;
+}
+
+.page > .number {
+    display: inline-block;
+    margin: 15px;
+    width: 15px;
+    height: 23px;
+    overflow: auto;
+}
