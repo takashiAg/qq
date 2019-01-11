@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-    let question_per_page = 10
+    var question_per_page = 10
     var questions = [
         {
             category: "認知症", like: 15, comment: 8, name: "tomotomo", age: 50, target: "(要介護1/90才/男性)",
@@ -74,5 +74,4 @@ window.addEventListener("load", function () {
     })
 })
 var quesition_array;
-var page_controller;
 var question;
