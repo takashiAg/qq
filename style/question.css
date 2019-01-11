@@ -1,0 +1,27 @@
+
+.question {
+    margin: 4px;
+    background: #FFFFFF;
+    display: inline-block;
+}
+
+.question > * {
+    margin: 4px;
+    background: #FFFFFF;
+}
+
+.question > .icon {
+    float: left;
+}
+
+.question > .info {
+    float: left;
+}
+
+.question > .likeandcomment {
+    float: right;
+}
+
+.question > . {
+    display: block;
+}

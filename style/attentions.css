@@ -1,0 +1,15 @@
+.attention-words {
+    color: #000000;
+    background: #DEDEDE;
+    padding: 0px 3px;
+    margin: 1px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+#attention {
+    background: #FFFFFF;
+    margin: 10px 0px;
+    overflow: visible;
+    height: auto;
+}

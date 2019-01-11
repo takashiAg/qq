@@ -1,0 +1,31 @@
+
+div.category {
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #555555;
+}
+
+div.category > * {
+    height: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+div.category > img {
+    height: 22px;
+    width: 22px;
+    margin: 9px 10px;
+    display: block;
+}
+
+div.category > .category_name {
+    height: 14px;
+    margin: 13px 00px;
+    font-size: 14px;
+    display: block;
+}
