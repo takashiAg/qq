@@ -1,0 +1,46 @@
+#question {
+    padding: 10px;
+}
+
+.question_wrapper {
+    border-radius: 5px;
+    width: 440px;
+    background-color: #FFFFFF;
+    float: right;
+    overflow: visible;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.question {
+    background-color: #FBFBFB;
+}
+
+.icon {
+    margin: 50px auto;
+}
+
+.info {
+    float: left;
+}
+
+.likeandcomment {
+}
+
+.question_wrapper > .title {
+    font-size: 20px;
+}
+
+pre.message {
+    text-align: left;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+}
+
+.comment {
+    text-align: left;
+}

@@ -11,6 +11,7 @@
     <script src="/js/category.js"></script>
     <script src="/js/question.js"></script>
     <script src="/js/footer.js"></script>
+    <script src="/js/fix_wrapper_height.js"></script>
 </head>
 <body>
 <nav><img src=""><img src="/img/top.png" height="60" width="161"/></nav>
@@ -37,7 +38,7 @@
             </div>
             <div class="question" v-for="{category,message,age,name,target,like,comment} in questions">
                 <span class="tag">{{category}}</span>
-                <span class="message">{{message}}</span>
+                <div class="message">{{message}}</div>
                 <img src="/img/icon.png" class="icon">
                 <div class="info">
                     <div class="name">{{name}}{{age}}才</div>
@@ -47,6 +48,13 @@
                     <img src="/img/like.png"><span class="like">{{like}}</span>
                     <img src="/img/comment.png"><span class="comment">{{comment}}</span>
                 </span>
+            </div>
+            <div class="page center">
+                <img class="number" src="/img/prev.png" height="16" width="15"/>
+                <span class="number" v-for="index in indexes" v-on:click="change(index)">
+                    {{index}}
+                </span>
+                <img class="number" src="/img/next.png" height="16" width="15"/>
             </div>
         </section>
     </div>
