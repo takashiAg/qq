@@ -11,13 +11,14 @@
     <script src="/js/category.js"></script>
     <script src="/js/question.js"></script>
     <script src="/js/footer.js"></script>
+    <script src="/js/fix_wrapper_height.js"></script>
 </head>
 <body>
 <nav><img src=""><img src="/img/top.png" height="60" width="161"/></nav>
 <div id="content_wrapper">
     <div id="sidebar_left">
         <div id="category">
-            <div class="category">カテゴリ一覧</div>
+            <div class="category" style="font-size: 20px;text-align: center"><span>カテゴリ一覧</span><img src="/img/next.png"/></div>
             <div class="category" v-for="category in categories">
                 <span style="width: 8px" :style="category.color"></span>
                 <img :src="category.img_source">
