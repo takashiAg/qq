@@ -5,6 +5,7 @@
     display: inline-block;
     text-align: left;
     color: #4F4F4F;
+    width: 100%;
 }
 
 .question > * {
