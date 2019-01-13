@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title id="title"></title>
     <link rel="stylesheet" href="/style/QA_category.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -19,11 +19,15 @@
     <div id="sidebar_left">
         <div id="category">
             <div class="category" style="font-size: 20px;text-align: center"><span>カテゴリ一覧</span><img src="/img/next.png"/></div>
-            <div class="category" v-for="category in categories">
-                <span style="width: 8px" :style="category.color"></span>
-                <img :src="category.img_source">
-                <span class="category_name">{{category.category}}</span>
-            </div>
+            <a v-for="category in categories" :href="category.href" style="color: #000000">
+                <div class="category">
+                    <!--<a :href="category.img_source.href">-->
+                    <span style="width: 8px" :style="category.color"></span>
+                    <img :src="category.img_source">
+                    <span class="category_name">{{category.category}}</span>
+                    <!--</a>-->
+                </div>
+            </a>
         </div>
     </div>
 
