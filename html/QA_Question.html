@@ -19,11 +19,13 @@
     <div id="sidebar_left">
         <div id="category">
             <div class="category" style="font-size: 20px;text-align: center"><span>カテゴリ一覧</span><img src="/img/next.png"/></div>
-            <div class="category" v-for="category in categories">
-                <span style="width: 8px" :style="category.color"></span>
-                <img :src="category.img_source">
-                <span class="category_name">{{category.category}}</span>
-            </div>
+            <a v-for="category in categories" :href="category.href" style="color: #000000">
+                <div class="category">
+                    <span style="width: 8px" :style="category.color"></span>
+                    <img :src="category.img_source">
+                    <span class="category_name">{{category.category}}</span>
+                </div>
+            </a>
         </div>
     </div>
 

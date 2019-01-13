@@ -22,11 +22,9 @@
             <div class="category" style="font-size: 20px;text-align: center"><span>カテゴリ一覧</span><img src="/img/next.png"/></div>
             <a v-for="category in categories" :href="category.href" style="color: #000000">
                 <div class="category">
-                    <!--<a :href="category.img_source.href">-->
                     <span style="width: 8px" :style="category.color"></span>
                     <img :src="category.img_source">
                     <span class="category_name">{{category.category}}</span>
-                    <!--</a>-->
                 </div>
             </a>
         </div>
