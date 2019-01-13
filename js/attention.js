@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
     var attention_words = new Vue({
         el: '#attention',
         data: {

@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
     var footer = new Vue({
         el: '#footer',
         data: {

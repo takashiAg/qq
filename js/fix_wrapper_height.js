@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
     setInterval(function () {
         var h = document.getElementById("content_wrapper").clientHeight
         var h1 = document.getElementById("sidebar_left").clientHeight

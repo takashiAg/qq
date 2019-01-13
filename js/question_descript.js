@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
     var title_length = 35
     var question = {
         tag: "認知症",

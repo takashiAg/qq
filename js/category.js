@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
 
     var categories = [
         {category: "認知症", color: {background: "#DE7171"}, img_source: "/img/category/icon_recognition.png"},

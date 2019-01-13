@@ -1,4 +1,4 @@
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
     var category = decodeURI("category" in args ? args.category : "")
     var categories = {
         "認知症": "認知症に関する質問をまとめました。認知症は老化による物忘れやぼけと勘違いされやすいですが、実際の症状は人によって全く異なります。「食事やお風呂を拒否するのだけどどうすればいい？」「よく徘徊してしまうのですが対応策はある？」など認知症の方への接し方についての悩みや、認知症の診断、認知症の方でも利用できる介護保険サービスなどについてまとめましたので、ぜひ参考にしてください。",
