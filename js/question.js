@@ -97,6 +97,20 @@ window.addEventListener("load", function () {
             }
         }
     })
+    var meta = category + "に関する質問 | ";
+    if (questions.length == 0)
+        meta += message.slice(0, 60) + "..."
+    else if (questions.length == 1)
+        meta += message.slice(0, 30) + ".../" + questions[0].message.slice(0, 30)
+    else if (questions.length == 2)
+        meta += message.slice(0, 30) + ".../" + questions[0].message.slice(0, 30) + "/" + questions[1].message.slice(0, 30)
+    else
+        meta += message.slice(0, 30) + ".../" + questions[0].message.slice(0, 30) + "/" + questions[1].message.slice(0, 30) + "/" + questions[2].message.slice(0, 30)
+    document.querySelector("meta[name=description]").content = meta;
+
+    var title = "みんなで介護のページ" + category + "に関する質問 | " + message;
+    if (document.getElementById("title"))
+        document.getElementById("title").innerText = title;
 })
 var quesition_array;
 var question;
