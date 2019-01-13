@@ -74,11 +74,11 @@
                 </span>
             </div>
             <div class="page center">
-                <img class="number" src="/img/prev.png" height="16" width="15"/>
+                <img class="number" src="/img/prev.png" height="16" width="15" v-on:click="prev()"/>
                 <span class="number" v-for="index in indexes" v-on:click="change(index)">
                     {{index}}
                 </span>
-                <img class="number" src="/img/next.png" height="16" width="15"/>
+                <img class="number" src="/img/next.png" height="16" width="15" v-on:click="next()"/>
             </div>
         </section>
     </div>

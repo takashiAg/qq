@@ -12,7 +12,7 @@
     <script src="/js/question.js"></script>
     <script src="/js/footer.js"></script>
     <script src="/js/fix_wrapper_height.js"></script>
-    <meta name="description" content="" />
+    <meta name="description" content=""/>
 </head>
 <body>
 <nav><img src=""><img src="/img/top.png" height="60" width="161"/></nav>
@@ -53,11 +53,11 @@
                 </span>
             </div>
             <div class="page center">
-                <img class="number" src="/img/prev.png" height="16" width="15"/>
+                <img class="number" src="/img/prev.png" height="16" width="15" v-on:click="prev()"/>
                 <span class="number" v-for="index in indexes" v-on:click="change(index)">
                     {{index}}
                 </span>
-                <img class="number" src="/img/next.png" height="16" width="15"/>
+                <img class="number" src="/img/next.png" height="16" width="15" v-on:click="next()"/>
             </div>
         </section>
     </div>

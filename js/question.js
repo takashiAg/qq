@@ -88,13 +88,23 @@ window.addEventListener("DOMContentLoaded", function () {
             category: category,
             message: message,
             indexes: index_question,
-            questions: quesition_array[0]
+            questions: quesition_array[0],
+            index: 0,
         },
         methods: {
             change: function (index) {
+                question.index = index;
                 question.questions = quesition_array[index - 0]
                 window.scrollTo(0, 0);
-            }
+            },
+            next: function () {
+                if (quesition_array.length - 1 > question.index)
+                    this.change(question.index + 1)
+            },
+            prev: function () {
+                if (question.index > 0)
+                    this.change(question.index - 1)
+            },
         }
     })
     var meta = category + "に関する質問 | ";
