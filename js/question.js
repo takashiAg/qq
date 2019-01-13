@@ -92,8 +92,8 @@ window.addEventListener("DOMContentLoaded", function () {
         },
         methods: {
             change: function (index) {
-                console.log(index)
                 question.questions = quesition_array[index - 0]
+                window.scrollTo(0, 0);
             }
         }
     })
