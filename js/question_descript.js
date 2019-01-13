@@ -33,4 +33,29 @@ window.addEventListener("load", function () {
         el: '#question',
         data: question
     })
+
+    var meta = "質問：" + question.message.slice(0, title_length) + "..." + question.comments.length + "件の回答";
+    // if (questions.length == 0)
+    //     meta +=
+    // else if (questions.length == 1)
+    //     meta += message.slice(0, 30) + ".../" + questions[0].message.slice(0, 30)
+    // else if (questions.length == 2)
+    //     meta += message.slice(0, 30) + ".../" + questions[0].message.slice(0, 30) + "/" + questions[1].message.slice(0, 30)
+    // else
+    //     meta += message.slice(0, 30) + ".../" + questions[0].message.slice(0, 30) + "/" + questions[1].message.slice(0, 30) + "/" + questions[2].message.slice(0, 30)
+    document.querySelector("meta[name=description]").content = meta;
+
+    var title = "質問：" + (question.message.length > title_length ? question.message.slice(0, 60) + "..." : question.message) + " | みんなで介護";
+    if (document.getElementById("title"))
+        document.getElementById("title").innerText = title;
+
+    if (question.comments.length < 5) {
+        var noindex = document.createElement("meta");
+        noindex.name = "robots"
+        noindex.content = "noindex"
+
+        // var noindex = '<meta name="robots" content="noindex">'
+        document.getElementsByTagName("head").item(0).appendChild(noindex)
+    }
+
 })
