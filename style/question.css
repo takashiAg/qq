@@ -3,6 +3,8 @@
     margin: 4px;
     background: #FFFFFF;
     display: inline-block;
+    text-align: left;
+    color: #4F4F4F;
 }
 
 .question > * {
