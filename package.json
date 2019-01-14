@@ -1,0 +1,16 @@
+{
+  "name": "webtaiou",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fileserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node fileserver.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "serve-index": "^1.9.1"
+  }
+}
