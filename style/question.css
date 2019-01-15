@@ -3,28 +3,33 @@
     margin: 4px;
     background: #FFFFFF;
     display: inline-block;
-    text-align: left;
     color: #4F4F4F;
     width: 100%;
 }
 
-.question > * {
+.question > div {
+    margin: auto;
+    max-width: 495px;
+    text-align: left;
+}
+
+.question > div > * {
     margin: 4px;
     background: #FFFFFF;
 }
 
-.question > .icon {
+.question > div > .icon {
     float: left;
 }
 
-.question > .info {
+.question > div > .info {
     float: left;
 }
 
-.question > .likeandcomment {
+.question > div > .likeandcomment {
     float: right;
 }
 
-.question > . {
+.question > div > . {
     display: block;
 }

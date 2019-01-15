@@ -12,7 +12,7 @@
     <script src="/js/question_descript.js"></script>
     <script src="/js/fix_wrapper_height.js"></script>
     <link rel="stylesheet" href="/style/QA_Question.css">
-    <meta name="description" content="" />
+    <meta name="description" content=""/>
 </head>
 <body>
 <nav><img src=""><img src="/img/top.png" height="60" width="161"/></nav>
@@ -20,7 +20,7 @@
     <div id="sidebar_left">
         <div id="category">
             <div class="category" style="font-size: 20px;text-align: center"><span>カテゴリ一覧</span><img src="/img/next.png"/></div>
-            <a v-for="category in categories" :href="category.href" style="color: #000000">
+            <a v-for="category in categories" :href="category.href" style="color: #4F4F4F">
                 <div class="category">
                     <span style="width: 8px" :style="category.color"></span>
                     <img :src="category.img_source">
@@ -31,7 +31,7 @@
     </div>
 
     <div id="sidebar_right">
-        <aside><img src="/img/QA_baner.png" height="400" width="200"/></aside>
+        <aside style="width:100%;"><img src="/img/QA_baner.png" style="width:100%;"/></aside>
     </div>
     <div id="main">
         <section id="question">
@@ -88,6 +88,9 @@
             <!--</span>-->
             <!--</div>-->
         </section>
+    </div>
+    <div id="sidebar_right_for_SP">
+        <aside><img src="/img/SP_baner.png" height="300" width="300"/></aside>
     </div>
 </div>
 <footer id="footer">

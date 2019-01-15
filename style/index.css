@@ -7,11 +7,6 @@
     }
 }
 
-@media (max-width: 800px) {
-    #sidebar_right {
-        display: none;
-    }
-}
 
 html {
     text-align: center;
@@ -34,12 +29,33 @@ nav {
     text-align: center;
 }
 
+@media (max-width: 700px) {
+    #sidebar_right {
+        float: none;
+        display: none;
+    }
+
+    #sidebar_right_for_SP {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (min-width: 701px) {
+    #sidebar_right {
+        width: 220px;
+        float: right;
+        margin: 0;
+        padding: 0;
+    }
+
+    #sidebar_right_for_SP {
+        display: none;
+    }
+}
 
 #sidebar_right {
-    width: 220px;
-    float: right;
-    margin: 0;
-    padding: 0;
 }
 
 #sidebar_left {

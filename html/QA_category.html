@@ -20,7 +20,7 @@
     <div id="sidebar_left">
         <div id="category">
             <div class="category" style="font-size: 20px;text-align: center"><span>カテゴリ一覧</span><img src="/img/next.png"/></div>
-            <a v-for="category in categories" :href="category.href" style="color: #000000">
+            <a v-for="category in categories" :href="category.href" style="color: #4F4F4F">
                 <div class="category">
                     <span style="width: 8px" :style="category.color"></span>
                     <img :src="category.img_source">
@@ -31,7 +31,7 @@
     </div>
 
     <div id="sidebar_right">
-        <aside><img src="/img/QA_baner.png" height="400" width="200"/></aside>
+        <aside style="width:100%;"><img src="/img/QA_baner.png" style="width:100%;"/></aside>
     </div>
     <div id="main">
         <section id="questions">
@@ -40,17 +40,19 @@
                 <div>{{message}}</div>
             </div>
             <div class="question" v-for="{category,message,age,name,target,like,comment} in questions">
-                <span class="tag">{{category}}</span>
-                <div class="message">{{message}}</div>
-                <img src="/img/icon.png" class="icon">
-                <div class="info">
-                    <div class="name">{{name}}{{age}}才</div>
-                    <div class="target">{{target}}</div>
+                <div>
+                    <span class="tag">{{category}}</span>
+                    <div class="message">{{message}}</div>
+                    <img src="/img/icon.png" class="icon">
+                    <div class="info">
+                        <div class="name">{{name}}{{age}}才</div>
+                        <div class="target">{{target}}</div>
+                    </div>
+                    <span class="likeandcomment">
+                        <img src="/img/like.png"><span class="like">{{like}}</span>
+                        <img src="/img/comment.png"><span class="comment">{{comment}}</span>
+                    </span>
                 </div>
-                <span class="likeandcomment">
-                    <img src="/img/like.png"><span class="like">{{like}}</span>
-                    <img src="/img/comment.png"><span class="comment">{{comment}}</span>
-                </span>
             </div>
             <div class="page center">
                 <img class="number" src="/img/prev.png" height="16" width="15" v-on:click="prev()"/>
@@ -60,6 +62,9 @@
                 <img class="number" src="/img/next.png" height="16" width="15" v-on:click="next()"/>
             </div>
         </section>
+    </div>
+    <div id="sidebar_right_for_SP">
+        <aside><img src="/img/SP_baner.png" height="300" width="300"/></aside>
     </div>
 </div>
 <footer id="footer">
