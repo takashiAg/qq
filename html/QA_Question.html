@@ -38,22 +38,24 @@
             <div class="tag">{{tag}}</div>
             <div class="question">
                 <div class="question_wrapper">
-                    <div class="title">{{title}}</div>
-                    <div style="margin-top: 10px">
-                        <div style="float: left;text-align: left">
-                            <div><span style="color: #ACE698;">{{user}}</span>&nbsp&nbsp{{age}}才</div>
-                            <div class="target">{{target}}</div>
+                    <div class="padding">
+                        <div class="title">{{title}}</div>
+                        <div style="margin-top: 10px">
+                            <div style="float: left;text-align: left">
+                                <div><span style="color: #ACE698;">{{user}}</span>&nbsp&nbsp{{age}}才</div>
+                                <div class="target">{{target}}</div>
+                            </div>
+                            <div style="float: right;margin-right: 20px">
+                                <img src="/img/like.png"><span class="like">{{like}}</span>
+                                <img src="/img/comment.png"><span class="comment">{{comments.length}}</span>
+                            </div>
                         </div>
-                        <div style="float: right;margin-right: 20px">
-                            <img src="/img/like.png"><span class="like">{{like}}</span>
-                            <img src="/img/comment.png"><span class="comment">{{comments.length}}</span>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                    <hr color="#DEDEDE">
+                        <div class="clear"></div>
+                        <hr color="#DEDEDE">
 
-                    <div style="width: 100%;margin-top: 10px">
-                        <pre class="message">{{message}}</pre>
+                        <div style="width: 100%;margin-top: 10px">
+                            <pre class="message">{{message}}</pre>
+                        </div>
                     </div>
                 </div>
                 <img src="/img/icon.png" class="icon">
