@@ -10,6 +10,7 @@
     overflow: visible;
     word-wrap: break-word;
     text-align: left;
+    color: #4F4F4F;
 }
 
 .question_wrapper > .padding {
