@@ -59,7 +59,7 @@
                 <div style="font-size: 30px">質問一覧</div>
                 <div>みんなで介護には、たくさんの質問が寄せられています。あなたと同じ悩みを持っている人がいるかも？気になる質問を探してみましょう!<br>ご自分で質問されたい方はアプリをダウンロードしてください！</div>
             </div>
-            <?php require("./template/question.php") ?>
+            <?php require("./template/question_list.php") ?>
         </section>
     </div>
     <div id="sidebar_right_for_SP">
