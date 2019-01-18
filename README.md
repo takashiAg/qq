@@ -1,15 +1,11 @@
 下のコマンドで動きます
-```
-git clone https://github.com/takashiAg/qq
-cd qq/source
-npm install 
-npm start
-```
+`docker`と`docker-compose`をつかってphp動かしてください
 
-phpサーバーあれば、ドキュメントルートが`./source`になってるのでそれを`/var/www/html`とかにしてください。\\
-もしもphpが入ってなければ、インストールするかdockerとdocker-composeをつかってphp動かしてください
 ```
 git clone https://github.com/takashiAg/qq
-cd qq/source
+cd qq
+docker-compose build
 docker-compose up
 ```
+
+phpを通常通りインストールする形でも構いません。phpサーバーあれば、ドキュメントルートが`./source`になってるのでそれを`/var/www/html`とかにしてください。\\
