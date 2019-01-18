@@ -59,28 +59,7 @@
                 <div style="font-size: 30px">質問一覧</div>
                 <div>みんなで介護には、たくさんの質問が寄せられています。あなたと同じ悩みを持っている人がいるかも？気になる質問を探してみましょう!<br>ご自分で質問されたい方はアプリをダウンロードしてください！</div>
             </div>
-            <div class="question" v-for="{category,message,age,name,target,like,comment} in questions">
-                <div>
-                    <span class="tag">{{category}}</span>
-                    <div class="message">{{message}}</div>
-                    <img src="/img/icon.png" class="icon">
-                    <div class="info">
-                        <div class="name">{{name}}{{age}}才</div>
-                        <div class="target">{{target}}</div>
-                    </div>
-                    <span class="likeandcomment">
-                        <img src="/img/like.png"><span class="like">{{like}}</span>
-                        <img src="/img/comment.png"><span class="comment">{{comment}}</span>
-                    </span>
-                </div>
-            </div>
-            <div class="page center">
-                <img class="number" src="/img/prev.png" height="16" width="15" v-on:click="prev()"/>
-                <span class="number" v-for="index in indexes" v-on:click="change(index)">
-                    {{index}}
-                </span>
-                <img class="number" src="/img/next.png" height="16" width="15" v-on:click="next()"/>
-            </div>
+            <?php require("./template/question.php") ?>
         </section>
     </div>
     <div id="sidebar_right_for_SP">
