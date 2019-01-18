@@ -38,21 +38,7 @@
                 <div style="font-size: 30px">人気の質問</div>
                 <div>みんながみている人気の質問をみてみよう。</div>
             </div>
-            <div class="question" v-for="{category,message,age,name,target,like,comment} in questions">
-                <div>
-                    <span class="tag">{{category}}</span>
-                    <div class="message">{{message}}</div>
-                    <img src="/img/icon.png" class="icon">
-                    <div class="info">
-                        <div class="name">{{name}}{{age}}才</div>
-                        <div class="target">{{target}}</div>
-                    </div>
-                    <span class="likeandcomment">
-                        <img src="/img/like.png"><span class="like">{{like}}</span>
-                        <img src="/img/comment.png"><span class="comment">{{comment}}</span>
-                    </span>
-                </div>
-            </div>
+            <?php require("./template/question_top.php") ?>
         </section>
     </div>
     <div id="sidebar_right_for_SP">
