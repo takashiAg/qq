@@ -67,7 +67,7 @@
                         <div style="color:#ACE698">{{user}}</div>
                         <div>{{comment}}</div>
                         <div style="float: right;color:#ACE698;border-radius: 7px;border: #ACE698;border-style: solid;border-width: 1px;text-align: center;width: 80px;font-size: 16px;">共感&nbsp{{like}}<img
-                                src="/img/goodjob.png" height="16" width="16"/></div>
+                                    src="/img/goodjob.png" height="16" width="16"/></div>
                     </div>
                     <img src="/img/icon.png" height="40" width="40" style="float: left;margin: 30px 0px 0px 40px"/>
                 </div>
@@ -95,23 +95,6 @@
         <aside><img src="/img/SP_baner.png" height="300" width="300"/></aside>
     </div>
 </div>
-<footer id="footer">
-    <div>
-        <span>初めての介護について</span>
-        <span>カテゴリ一覧</span>
-    </div>
-    <ul>
-        <li v-for="{name} in categories1"><a>{{name}}</a></li>
-    </ul>
-    <ul>
-        <li v-for="{name} in categories2"><a>{{name}}</a></li>
-    </ul>
-    <ul>
-        <li v-for="{name} in categories3"><a>{{name}}</a></li>
-    </ul>
-    <div class="clear center">
-        ©︎2018 はじめての介護
-    </div>
-</footer>
+<?php require("./template/footer.php") ?>
 </body>
 </html>

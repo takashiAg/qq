@@ -67,23 +67,6 @@
         <aside><img src="/img/SP_baner.png" height="300" width="300"/></aside>
     </div>
 </div>
-<footer id="footer">
-    <div>
-        <span>初めての介護について</span>
-        <span>カテゴリ一覧</span>
-    </div>
-    <ul>
-        <li v-for="{name} in categories1"><a>{{name}}</a></li>
-    </ul>
-    <ul>
-        <li v-for="{name} in categories2"><a>{{name}}</a></li>
-    </ul>
-    <ul>
-        <li v-for="{name} in categories3"><a>{{name}}</a></li>
-    </ul>
-    <div class="clear center">
-        ©︎2018 はじめての介護
-    </div>
-</footer>
+<?php require("./template/footer.php") ?>
 </body>
 </html>
