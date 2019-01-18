@@ -35,32 +35,7 @@
     </div>
     <div id="main">
         <section id="questions">
-            <div class="question">
-                <div style="font-size: 30px">{{category}}に関する質問</div>
-                <div>{{message}}</div>
-            </div>
-            <div class="question" v-for="{category,message,age,name,target,like,comment} in questions">
-                <div>
-                    <span class="tag">{{category}}</span>
-                    <div class="message">{{message}}</div>
-                    <img src="/img/icon.png" class="icon">
-                    <div class="info">
-                        <div class="name">{{name}}{{age}}才</div>
-                        <div class="target">{{target}}</div>
-                    </div>
-                    <span class="likeandcomment">
-                        <img src="/img/like.png"><span class="like">{{like}}</span>
-                        <img src="/img/comment.png"><span class="comment">{{comment}}</span>
-                    </span>
-                </div>
-            </div>
-            <div class="page center">
-                <img class="number" src="/img/prev.png" height="16" width="15" v-on:click="prev()"/>
-                <span class="number" v-for="index in indexes" v-on:click="change(index)">
-                    {{index}}
-                </span>
-                <img class="number" src="/img/next.png" height="16" width="15" v-on:click="next()"/>
-            </div>
+            <?php require("./template/question_category.php") ?>
         </section>
     </div>
     <div id="sidebar_right_for_SP">
