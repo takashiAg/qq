@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", function () {
         {category: "雑談", color: {background: "#87EFEF"}, img_source: "/img/category/icon_chat.png"}
     ]
     for (var index  in categories) {
-        categories[index].href = "/html/QA_category.html?category=" + categories[index].category
+        categories[index].href = "/html/QA_category.php?category=" + categories[index].category
     }
     var category = new Vue({
         el: '#category',
