@@ -3,16 +3,17 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="UTF-8">
-    <title id="title"></title>
+    <title id="title"><?php echo $title; ?></title>
     <link rel="stylesheet" href="/style/QA_category.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="/js/get_args.js"></script>
     <script src="/js/category.js"></script>
-    <script src="/js/question.js"></script>
-    <script src="/js/footer.js"></script>
+<!--    <script src="/js/question.js"></script>-->
+<!--    <script src="/js/footer.js"></script>-->
     <script src="/js/fix_wrapper_height.js"></script>
-    <meta name="description" content=""/>
+    <?php echo $noindex; ?>
+    <meta name="description" content="<?php echo $meta; ?>"/>
 </head>
 <body>
 <nav><img src=""><img src="/img/top.png" height="60" width="161"/></nav>
