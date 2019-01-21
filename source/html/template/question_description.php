@@ -37,13 +37,13 @@ class Contents
 
     function __construct()
     {
-        if (strlen($this->question["message"]) > $this->title_length) {
+        if (mb_strlen($this->question["message"]) > $this->title_length) {
             $this->question["title"] = mb_substr($this->question["message"], 0, $this->title_length - 1) . "...";
         } else {
             $this->question["title"] = $this->question["message"];
         }
 
-        if (count($this->question["comments"]) < 5) {
+        if (mb_strlen($this->question["message"]) < 100) {
             $this->noindex = "<meta name=\"robots\" content=\"noindex\" />";
         } else {
             $this->noindex = "";
