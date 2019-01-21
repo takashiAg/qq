@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php require("./template/question_top.php") ?>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="UTF-8">
     <title id="title"><?php echo $title; ?></title>
@@ -9,8 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="/js/get_args.js"></script>
     <script src="/js/category.js"></script>
-<!--    <script src="/js/question.js"></script>-->
-<!--    <script src="/js/footer.js"></script>-->
+    <!--    <script src="/js/question.js"></script>-->
+    <!--    <script src="/js/footer.js"></script>-->
     <script src="/js/fix_wrapper_height.js"></script>
     <?php echo $noindex; ?>
     <meta name="description" content="<?php echo $meta; ?>"/>
@@ -39,7 +40,49 @@
                 <div style="font-size: 30px">人気の質問</div>
                 <div>みんながみている人気の質問をみてみよう。</div>
             </div>
-            <?php require("./template/question_top.php") ?>
+
+            <?php foreach ($questions->popularity() as $key => $val) { ?>
+                <div class="question">
+                    <div>
+                        <span class="tag"><?php echo $val["category"]; ?></span>
+                        <div class="message"><?php echo $val["message"]; ?></div>
+                        <img src="/img/icon.png" class="icon">
+                        <div class="info">
+                            <div class="name"><?php echo $val["name"]; ?><?php echo $val["age"]; ?>才</div>
+                            <div class="target"><?php echo $val["target"]; ?></div>
+                        </div>
+                        <span class="likeandcomment">
+                    <img src="/img/like.png"><span class="like"><?php echo $val["like"]; ?></span>
+                    <img src="/img/comment.png"><span class="comment"><?php echo $val["comment"]; ?></span>
+                </span>
+                    </div>
+                </div>
+            <?php } ?>
+        </section>
+
+        <section>
+            <div class="question">
+                <div style="font-size: 30px">最新の質問</div>
+                <div>みんながみている人気の質問をみてみよう。</div>
+            </div>
+
+            <?php foreach ($questions->newest() as $key => $val) { ?>
+                <div class="question">
+                    <div>
+                        <span class="tag"><?php echo $val["category"]; ?></span>
+                        <div class="message"><?php echo $val["message"]; ?></div>
+                        <img src="/img/icon.png" class="icon">
+                        <div class="info">
+                            <div class="name"><?php echo $val["name"]; ?><?php echo $val["age"]; ?>才</div>
+                            <div class="target"><?php echo $val["target"]; ?></div>
+                        </div>
+                        <span class="likeandcomment">
+                    <img src="/img/like.png"><span class="like"><?php echo $val["like"]; ?></span>
+                    <img src="/img/comment.png"><span class="comment"><?php echo $val["comment"]; ?></span>
+                </span>
+                    </div>
+                </div>
+            <?php } ?>
         </section>
     </div>
     <div id="sidebar_right_for_SP">
