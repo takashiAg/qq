@@ -83,6 +83,10 @@
                     </div>
                 </div>
             <?php } ?>
+            <div>
+                <img src="/img/next_red.png" style="float: right;margin-right: 10px">
+                <span style="float: right;color: #FF6969;margin-right: 15px;font-size: 16px">新着の質問とアドバイスをもっと見る</span>
+            </div>
         </section>
     </div>
     <div id="sidebar_right_for_SP">
