@@ -8,9 +8,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="/js/get_args.js"></script>
-<!--    <script src="/js/category.js"></script>-->
+    <script src="/js/category.js"></script>
 <!--    <script src="/js/question.js"></script>-->
-    <script src="/js/footer.js"></script>
+<!--    <script src="/js/footer.js"></script>-->
     <script src="/js/fix_wrapper_height.js"></script>
     <?php echo $noindex; ?>
     <meta name="description" content="<?php echo $meta; ?>"/>
