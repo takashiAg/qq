@@ -60,13 +60,13 @@
                 <div style="font-size: 30px">質問一覧</div>
                 <div>みんなで介護には、たくさんの質問が寄せられています。あなたと同じ悩みを持っている人がいるかも？気になる質問を探してみましょう!<br>ご自分で質問されたい方はアプリをダウンロードしてください！</div>
             </div>
-            <?php require("./template/question_list.php") ?>
+            <?php require("./templates/question_list.php") ?>
         </section>
     </div>
     <div id="sidebar_right_for_SP">
         <aside><img src="/img/SP_baner.png" height="300" width="300"/></aside>
     </div>
 </div>
-<?php require("./template/footer.php") ?>
+<?php require("./templates/footer.php") ?>
 </body>
 </html>

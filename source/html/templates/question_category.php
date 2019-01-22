@@ -5,8 +5,57 @@
  * Date=> 2019-01-18
  * Time=> 13=>14
  */
+function get_question_list($term)
+{
+    $pickup = array(
+        'post_type' => 'mkquestion',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'minnadekaigo',
+                'field' => 'slug',
+                'terms' => $term,
+            ),
+        ),
+    );
+    $pickup_query = new WP_Query($pickup);
+    $data = array();
+    while ($pickup_query->have_posts()) : $pickup_query->the_post();
+        $tile = get_the_title();
+        $content = get_the_content();
+        $id = get_the_id();
+        $question = get_post_custom($id);
+        array_push($data, array($tile, $content, $id, $question));
+    endwhile; // end of the loop.
+    return $data;
+}
 
-$category = $_GET["category"];
+$category = "";
+$categories_table = array("お金" => "mk_money",
+    "ケアプラン" => "mk_care_plan",
+    "ケアマネージャー" => "mk_care_manager",
+    "その他" => "mk_others",
+    "リハビリ" => "mk_rehabilitation",
+    "リフォーム" => "mk_reform",
+    "介護保険" => "mk_insurance",
+    "介護器具" => "mk_device",
+    "介護施設" => "mk_-hospital",
+    "介護疲れ・ストレス" => "mk_stress",
+    "元気報告" => "mk_report",
+    "入浴・排泄ケア" => "mk_care",
+    "家族" => "mk_family",
+    "病気" => "mk_sick",
+    "自己紹介" => "mk_self_introduction",
+    "要介護認定" => "mk_certification",
+    "認知症" => "mk_cognition",
+    "雑談" => "mk_chat",
+    "食事" => "mk_food");
+foreach ($categories_table as $key => $value) {
+    if ($value == $term) {
+        $category = $key;
+    }
+}
+
+//$category = $_GET["category"];
 $page = isset($_GET["page"]) ? $_GET["page"] : 0;
 $question_per_page = 10;
 $questions = array(
@@ -138,6 +187,21 @@ $questions = array(
     )
 );
 
+$q = get_question_list($term);
+$questions["questions"] = array();
+foreach ($q as $key => $value) {
+    array_push($questions["questions"], array(
+        "id" => $value[2],
+        "category" => $category,
+        "like" => 15,
+        "comment" => 8,
+        "name" => $value[0],
+        "age" => $value[3]["age"][0],
+        "target" => "(" . $value[3]["thecare"][0] . ")",
+        "message" => $value[1]
+    ));
+}
+
 function serialized_question($questions, $question_per_page)
 {
     $quesition_array = [];
@@ -158,43 +222,5 @@ if (count($quesition_array) - 1 < $page) {
     $page = count($quesition_array) - 1;
 }
 ?>
-
-<div class="question">
-    <div style="font-size: 30px"><?php echo $category; ?>に関する質問</div>
-    <div><?php echo $questions["categories"][$category]; ?></div>
-</div>
-
-<?php foreach ($quesition_array[$page] as $key => $val) { ?>
-    <div class="question">
-        <div>
-            <span class="tag"><?php echo $val["category"]; ?></span>
-            <div class="message"><?php echo $val["message"]; ?></div>
-            <img src="/img/icon.png" class="icon">
-            <div class="info">
-                <div class="name"><?php echo $val["name"]; ?><?php echo $val["age"]; ?>才</div>
-                <div class="target"><?php echo $val["target"]; ?></div>
-            </div>
-            <span class="likeandcomment">
-                    <img src="/img/like.png"><span class="like"><?php echo $val["like"]; ?></span>
-                    <img src="/img/comment.png"><span class="comment"><?php echo $val["comment"]; ?></span>
-                </span>
-        </div>
-    </div>
-<?php } ?>
-<div class="page center">
-    <!--    <img class="number" src="/img/prev.png" height="16" width="15"/>-->
-    <a class="number" href="<?php echo basename($_SERVER['PHP_SELF']) . "?" . (isset($_GET[$category]) ? "category=" . $_GET[$category] . "&" : "") . "page=" . ($page <= 0 ? 0 : $page - 1); ?>"
-       style="color: #4F4F4F">
-        <img class="number" src="/img/prev.png" height="16" width="15"/></a>
-    <?php foreach ($quesition_array as $key => $val) { ?>
-        <a class="number" href="<?php echo basename($_SERVER['PHP_SELF']) . "?" . (isset($_GET[$category]) ? "category=" . $_GET[$category] . "&" : "") . "page=" . $key; ?>"
-           style="color: #4F4F4F"><?php echo $key; ?></a>
-    <?php } ?>
-    <a class="number"
-       href="<?php echo basename($_SERVER['PHP_SELF']) . "?" . (isset($_GET[$category]) ? "category=" . $_GET[$category] . "&" : "") . "page=" . ($page >= count($quesition_array) - 1 ? count($quesition_array) - 1 : $page); ?>"
-       style="color: #4F4F4F"><img class="number" src="/img/next.png" height="16" width="15"/></a>
-
-</div>
-
 
 

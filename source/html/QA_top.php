@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php require("./template/question_top.php") ?>
+    <?php require("./templates/question_top.php") ?>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="UTF-8">
     <title id="title"><?php echo $title; ?></title>
@@ -93,6 +93,6 @@
         <aside><img src="/img/SP_baner.png" height="300" width="300"/></aside>
     </div>
 </div>
-<?php require("./template/footer.php") ?>
+<?php require("./templates/footer.php") ?>
 </body>
 </html>
