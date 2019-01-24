@@ -1,7 +1,7 @@
 <?php /*Template Name: みんなで介護ー質問詳細*/ ?>
 
 <!--QA_top-->
-
+<!--人気が10件;;newestの方は20件-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
