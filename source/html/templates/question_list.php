@@ -33,108 +33,124 @@ $questions = array(
     "questions" => array(
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "1ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "2ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "3ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "4ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "5ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "6ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "7ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "8ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "9ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "10ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "11ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "12ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "13ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "14ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "15ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "16ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "17ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "18ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "19ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "20ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "21ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "22ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "23ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "24ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
+            "message" => "25ページ目"
         ),
         array(
             "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "現在、要介護2の老親の事で質問です。週１日で身体看護と生活援助を合計で約一時間程お願いしています。内容は散歩補助、通院補助、部屋掃除です。このプランを変更してほしいと相談しましたら変更は無理と言われました。どうすればよい..."
-        )
+            "message" => "26ページ目"
+        ),
+        array(
+            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
+            "message" => "27ページ目"
+        ),
+        array(
+            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
+            "message" => "28ページ目"
+        ),
+        array(
+            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
+            "message" => "29ページ目"
+        ),
+        array(
+            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
+            "message" => "30ページ目"
+        ),
     )
 );
 
@@ -165,30 +181,30 @@ if (count($quesition_array) - 1 < $page) {
         <div>
             <span class="tag"><?php echo $val["category"]; ?></span>
             <div class="message"><?php echo $val["message"]; ?></div>
-            <img src="/img/icon.png" class="icon">
+            <img src="/wp-content/uploads/2019/01/icon.png" class="icon">
             <div class="info">
                 <div class="name"><?php echo $val["name"]; ?><?php echo $val["age"]; ?>才</div>
                 <div class="target"><?php echo $val["target"]; ?></div>
             </div>
             <span class="likeandcomment">
-                    <img src="/img/like.png"><span class="like"><?php echo $val["like"]; ?></span>
-                    <img src="/img/comment.png"><span class="comment"><?php echo $val["comment"]; ?></span>
+                    <img src="/wp-content/uploads/2019/01/like.png"><span class="like"><?php echo $val["like"]; ?></span>
+                    <img src="/wp-content/uploads/2019/01/comment.png"><span class="comment"><?php echo $val["comment"]; ?></span>
                 </span>
         </div>
     </div>
 <?php } ?>
 <div class="page center">
-    <!--    <img class="number" src="/img/prev.png" height="16" width="15"/>-->
+    <!--    <img class="number" src="/wp-content/uploads/2019/01/prev.png" height="16" width="15"/>-->
     <a class="number" href="<?php echo basename($_SERVER['PHP_SELF']) . "?" . (isset($_GET[$category]) ? "category=" . $_GET[$category] . "&" : "") . "page=" . ($page <= 0 ? 0 : $page - 1); ?>"
        style="color: #4F4F4F">
-        <img class="number" src="/img/prev.png" height="16" width="15"/></a>
+        <img class="number" src="/wp-content/uploads/2019/01/prev.png" height="16" width="15"/></a>
     <?php foreach ($quesition_array as $key => $val) { ?>
         <a class="number" href="<?php echo basename($_SERVER['PHP_SELF']) . "?" . (isset($_GET[$category]) ? "category=" . $_GET[$category] . "&" : "") . "page=" . $key; ?>"
            style="color: #4F4F4F"><?php echo $key; ?></a>
     <?php } ?>
     <a class="number"
        href="<?php echo basename($_SERVER['PHP_SELF']) . "?" . (isset($_GET[$category]) ? "category=" . $_GET[$category] . "&" : "") . "page=" . ($page >= count($quesition_array) - 1 ? count($quesition_array) - 1 : $page); ?>"
-       style="color: #4F4F4F"><img class="number" src="/img/next.png" height="16" width="15"/></a>
+       style="color: #4F4F4F"><img class="number" src="/wp-content/uploads/2019/01/next.png" height="16" width="15"/></a>
 
 </div>
 
