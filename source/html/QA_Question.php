@@ -32,7 +32,7 @@
     </div>
 
     <div id="sidebar_right">
-        <aside style="width:100%;"><img src="/wp-content/uploads/2019/01/QA_baner.png" style="width:100%;"/></aside>
+        <aside style="width:100%;"><a href="https://app.adjust.com/je9ttl3"><img src="/wp-content/uploads/2019/01/QA_baner.png" style="width:100%;"/></a></aside>
     </div>
     <div id="main">
         <section id="question">
@@ -80,7 +80,7 @@
         </section>
     </div>
     <div id="sidebar_right_for_SP">
-        <aside><img src="/wp-content/uploads/2019/01/SP_baner.png" height="300" width="300"/></aside>
+        <aside><a href="https://app.adjust.com/je9ttl3"><img src="/wp-content/uploads/2019/01/SP_baner.png" height="300" width="300"/></a></aside>
     </div>
 </div>
 <?php require(dirname(__FILE__) . "/templates/footer.php") ?>

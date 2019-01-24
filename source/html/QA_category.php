@@ -31,7 +31,7 @@
     </div>
 
     <div id="sidebar_right">
-        <aside style="width:100%;"><img src="/wp-content/uploads/2019/01/QA_baner.png" style="width:100%;"/></aside>
+        <aside style="width:100%;"><a href="https://app.adjust.com/je9ttl3"><img src="/wp-content/uploads/2019/01/QA_baner.png" style="width:100%;"/></a></aside>
     </div>
     <div id="main">
         <section id="questions">
@@ -60,7 +60,8 @@
             <?php } ?>
             <div class="page center">
                 <!--    <img class="number" src="/img/prev.png" height="16" width="15"/>-->
-                <a class="number" href="<?php echo basename($_SERVER['PHP_SELF']) . "?" . (isset($_GET[$category]) ? "category=" . $_GET[$category] . "&" : "") . "page=" . ($page <= 0 ? 0 : $page - 1); ?>"
+                <a class="number"
+                   href="<?php echo basename($_SERVER['PHP_SELF']) . "?" . (isset($_GET[$category]) ? "category=" . $_GET[$category] . "&" : "") . "page=" . ($page <= 0 ? 0 : $page - 1); ?>"
                    style="color: #4F4F4F">
                     <img class="number" src="/wp-content/uploads/2019/01/prev.png" height="16" width="15"/></a>
                 <?php foreach ($quesition_array as $key => $val) { ?>
@@ -76,7 +77,7 @@
         </section>
     </div>
     <div id="sidebar_right_for_SP">
-        <aside><img src="/wp-content/uploads/2019/01/SP_baner.png" height="300" width="300"/></aside>
+        <aside><a href="https://app.adjust.com/je9ttl3"><img src="/wp-content/uploads/2019/01/SP_baner.png" height="300" width="300"/></a></aside>
     </div>
 </div>
 <?php require(dirname(__FILE__) . "/templates/footer.php") ?>
