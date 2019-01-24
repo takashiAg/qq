@@ -56,7 +56,6 @@ foreach ($categories_table as $key => $value) {
 }
 
 //$category = $_GET["category"];
-$page = isset($_GET["page"]) ? $_GET["page"] : 0;
 $question_per_page = 10;
 $questions = array(
     "categories" => array(
@@ -217,6 +216,7 @@ function serialized_question($questions, $question_per_page)
     return $quesition_array;
 }
 
+$page = isset($_GET["page"]) ? $_GET["page"] : 0;
 $quesition_array = serialized_question($questions, $question_per_page);
 if (count($quesition_array) - 1 < $page) {
     $page = count($quesition_array) - 1;
