@@ -31,14 +31,18 @@ class question
             $content = get_the_content();
             $id = get_the_id();
             $question = get_post_custom($id);
-            array_push($data, array($tile, $content, $id, $question));
+            $category = array(
+                "slug" => get_the_category()[0]->slug,
+                "name" => get_the_category()[0]->name
+            );
+            array_push($data, array($tile, $content, $id, $question, $category));
         endwhile; // end of the loop.
-//        var_dump($data);
         $return_data = array();
         foreach ($data as $key => $value) {
             array_push($return_data, array(
                 "id" => $value[2],
-                "category" => "",
+                "category" => $value[4]["name"],
+                "slug" => $value[4]["slug"],
                 "like" => 15,
                 "comment" => 8,
                 "name" => $value[0],
@@ -96,6 +100,6 @@ class question
 
 $questions = new question();
 
-//var_dump($questions->get_question_list(10));
+//var_dump($questions->get_question_list(1)[0])
 
 ?>
