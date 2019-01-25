@@ -13,14 +13,51 @@ class question
 
     }
 
+    function get_question_list($count)
+    {
+        $pickup = array(
+            'post_type' => 'mkquestion',
+            'tax_query' => array(
+                array(
+                    'post_type' => 'mkquestion',
+                ),
+            ),
+        );
+        $pickup_query = new WP_Query($pickup);
+        $data = array();
+        $index = 0;
+        while ($pickup_query->have_posts() && $index++ < $count) : $pickup_query->the_post();
+            $tile = get_the_title();
+            $content = get_the_content();
+            $id = get_the_id();
+            $question = get_post_custom($id);
+            array_push($data, array($tile, $content, $id, $question));
+        endwhile; // end of the loop.
+//        var_dump($data);
+        $return_data = array();
+        foreach ($data as $key => $value) {
+            array_push($return_data, array(
+                "id" => $value[2],
+                "category" => "",
+                "like" => 15,
+                "comment" => 8,
+                "name" => $value[0],
+                "age" => $value[3]["age"][0],
+                "target" => "(" . $value[3]["thecare"][0] . ")",
+                "message" => $value[1]
+            ));
+        }
+        return $return_data;
+    }
+
     function popularity()
     {
-        return $this->popularity;
+        return $this->get_question_list(10);
     }
 
     function newest()
     {
-        return $this->newest;
+        return $this->get_question_list(20);
     }
 
     private $popularity = array(
@@ -59,11 +96,6 @@ class question
 
 $questions = new question();
 
+//var_dump($questions->get_question_list(10));
+
 ?>
-
-
-
-
-
-
-

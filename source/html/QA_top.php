@@ -5,27 +5,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php require("./templates/question_top.php") ?>
+    <?php require(dirname(__FILE__) . "/templates/question_top.php") ?>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="UTF-8">
     <title id="title"><?php echo $title; ?></title>
-    <link rel="stylesheet" href="/style/QA_category.css">
+    <link rel="stylesheet" href="/wp-content/themes/simplicity2-child/style/QA_category.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="/js/get_args.js"></script>
-    <script src="/js/category.js"></script>
-    <!--    <script src="/js/question.js"></script>-->
-    <!--    <script src="/js/footer.js"></script>-->
-    <script src="/js/fix_wrapper_height.js"></script>
+    <script src="/wp-content/themes/simplicity2-child/js/get_args.js"></script>
+    <script src="/wp-content/themes/simplicity2-child/js/category.js"></script>
+    <!--    <script src="/wp-content/themes/simplicity2-child/js/question.js"></script>-->
+    <!--    <script src="/wp-content/themes/simplicity2-child/js/footer.js"></script>-->
+    <script src="/wp-content/themes/simplicity2-child/js/fix_wrapper_height.js"></script>
     <?php echo $noindex; ?>
     <meta name="description" content="<?php echo $meta; ?>"/>
 </head>
 <body>
-<nav><img src=""><img src="/img/top.png" height="60" width="161"/></nav>
+<nav><img src=""><img src="/wp-content/uploads/2019/01/top.png" height="60" width="161"/></nav>
 <div id="content_wrapper">
     <div id="sidebar_left">
         <div id="category">
-            <div class="category" style="font-size: 20px;text-align: center"><span>カテゴリ一覧</span><img src="/img/next.png"/></div>
+            <div class="category" style="font-size: 20px;text-align: center"><span>カテゴリ一覧</span><img src="/wp-content/uploads/2019/01/next.png"/></div>
             <a v-for="category in categories" :href="category.href" style="color: #4F4F4F">
                 <div class="category">
                     <span style="width: 8px" :style="category.color"></span>
@@ -51,14 +51,14 @@
                     <div>
                         <span class="tag"><?php echo $val["category"]; ?></span>
                         <div class="message"><?php echo $val["message"]; ?></div>
-                        <img src="/img/icon.png" class="icon">
+                        <img src="/wp-content/uploads/2019/01/icon.png" class="icon">
                         <div class="info">
                             <div class="name"><?php echo $val["name"]; ?><?php echo $val["age"]; ?>才</div>
                             <div class="target"><?php echo $val["target"]; ?></div>
                         </div>
                         <span class="likeandcomment">
-                    <img src="/img/like.png"><span class="like"><?php echo $val["like"]; ?></span>
-                    <img src="/img/comment.png"><span class="comment"><?php echo $val["comment"]; ?></span>
+                    <img src="/wp-content/uploads/2019/01/like.png"><span class="like"><?php echo $val["like"]; ?></span>
+                    <img src="/wp-content/uploads/2019/01/comment.png"><span class="comment"><?php echo $val["comment"]; ?></span>
                 </span>
                     </div>
                 </div>
@@ -76,20 +76,20 @@
                     <div>
                         <span class="tag"><?php echo $val["category"]; ?></span>
                         <div class="message"><?php echo $val["message"]; ?></div>
-                        <img src="/img/icon.png" class="icon">
+                        <img src="/wp-content/uploads/2019/01/icon.png" class="icon">
                         <div class="info">
                             <div class="name"><?php echo $val["name"]; ?><?php echo $val["age"]; ?>才</div>
                             <div class="target"><?php echo $val["target"]; ?></div>
                         </div>
                         <span class="likeandcomment">
-                    <img src="/img/like.png"><span class="like"><?php echo $val["like"]; ?></span>
-                    <img src="/img/comment.png"><span class="comment"><?php echo $val["comment"]; ?></span>
+                    <img src="/wp-content/uploads/2019/01/like.png"><span class="like"><?php echo $val["like"]; ?></span>
+                    <img src="/wp-content/uploads/2019/01/comment.png"><span class="comment"><?php echo $val["comment"]; ?></span>
                 </span>
                     </div>
                 </div>
             <?php } ?>
             <div>
-                <img src="/img/next_red.png" style="float: right;margin-right: 10px">
+                <img src="/wp-content/uploads/2019/01/next_red.png" style="float: right;margin-right: 10px">
                 <span style="float: right;color: #FF6969;margin-right: 15px;font-size: 16px">新着の質問とアドバイスをもっと見る</span>
             </div>
         </section>
@@ -98,6 +98,6 @@
         <aside><a href="https://app.adjust.com/je9ttl3"><img src="/wp-content/uploads/2019/01/SP_baner.png" height="300" width="300"/></a></aside>
     </div>
 </div>
-<?php require("./templates/footer.php") ?>
+<?php require(dirname(__FILE__) . "/templates/footer.php") ?>
 </body>
 </html>
