@@ -11,25 +11,40 @@
     margin: auto;
     max-width: 495px;
     text-align: left;
+    font-size: 0px;
 }
 
-.question > div > * {
+.question a {
+    color: #4F4F4F;
+}
+
+.question > div * {
     margin: 4px;
     background: #FFFFFF;
 }
 
-.question > div > .icon {
-    float: left;
-}
-
-.question > div > .info {
-    float: left;
-}
-
-.question > div > .likeandcomment {
-    float: right;
-}
-
-.question > div > . {
+.question span {
     display: block;
+}
+
+.question span > * {
+    display: inline;
+}
+
+.question .message {
+    font-size: 14px;
+}
+
+.question .icon {
+    float: left;
+}
+
+.question .info {
+    float: left;
+    font-size: 14px;
+}
+
+.question .likeandcomment {
+    float: right;
+    font-size: 14px;
 }
