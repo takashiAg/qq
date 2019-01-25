@@ -38,23 +38,23 @@
 
             <div class="question">
                 <div style="font-size: 30px"><?php echo $category; ?>に関する質問</div>
-                <div><?php echo $questions["categories"][$category]; ?></div>
+                <div style="font-size: 14px"><?php echo $questions["categories"][$category]; ?></div>
             </div>
 
             <?php foreach ($quesition_array[$page] as $key => $val) { ?>
                 <div class="question">
                     <div>
-                        <span class="tag"><?php echo $val["category"]; ?></span>
-                        <div class="message"><?php echo $val["message"]; ?></div>
-                        <img src="/wp-content/uploads/2019/01/icon.png" class="icon">
-                        <div class="info">
-                            <div class="name"><?php echo $val["name"]; ?><?php echo $val["age"]; ?>才</div>
-                            <div class="target"><?php echo $val["target"]; ?></div>
-                        </div>
-                        <span class="likeandcomment">
-                    <img src="/wp-content/uploads/2019/01/like.png"><span class="like"><?php echo $val["like"]; ?></span>
-                    <img src="/wp-content/uploads/2019/01/comment.png"><span class="comment"><?php echo $val["comment"]; ?></span>
-                </span>
+                        <a href="#">
+                            <span class="tag" style="color: #FFFFFF"><?php echo $val["category"]; ?></span>
+                            <div class="message"><?php echo $val["message"]; ?></div>
+                            <img src="/wp-content/uploads/2019/01/icon.png" class="icon">
+                            <div class="info">
+                                <div class="name"><?php echo $val["name"]; ?><?php echo $val["age"]; ?>才</div>
+                                <div class="target"><?php echo $val["target"]; ?></div>
+                            </div>
+                            <span class="likeandcomment"><img src="/wp-content/uploads/2019/01/like.png"><span class="like"><?php echo $val["like"]; ?></span><img
+                                        src="/wp-content/uploads/2019/01/comment.png"><span class="comment"><?php echo $val["comment"]; ?></span></span>
+                        </a>
                     </div>
                 </div>
             <?php } ?>

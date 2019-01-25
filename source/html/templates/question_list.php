@@ -179,17 +179,17 @@ if (count($quesition_array) - 1 < $page) {
 <?php foreach ($quesition_array[$page] as $key => $val) { ?>
     <div class="question">
         <div>
-            <span class="tag"><?php echo $val["category"]; ?></span>
-            <div class="message"><?php echo $val["message"]; ?></div>
-            <img src="/wp-content/uploads/2019/01/icon.png" class="icon">
-            <div class="info">
-                <div class="name"><?php echo $val["name"]; ?><?php echo $val["age"]; ?>才</div>
-                <div class="target"><?php echo $val["target"]; ?></div>
-            </div>
-            <span class="likeandcomment">
-                    <img src="/wp-content/uploads/2019/01/like.png"><span class="like"><?php echo $val["like"]; ?></span>
-                    <img src="/wp-content/uploads/2019/01/comment.png"><span class="comment"><?php echo $val["comment"]; ?></span>
-                </span>
+            <a href="#">
+                <object><a class="tag"><?php echo $val["category"]; ?></a></object>
+                <div class="message"><?php echo $val["message"]; ?></div>
+                <img src="/wp-content/uploads/2019/01/icon.png" class="icon">
+                <div class="info">
+                    <div class="name"><?php echo $val["name"]; ?><?php echo $val["age"]; ?>才</div>
+                    <div class="target"><?php echo $val["target"]; ?></div>
+                </div>
+                <span class="likeandcomment"><img src="/wp-content/uploads/2019/01/like.png"><span class="like"><?php echo $val["like"]; ?></span><img
+                            src="/wp-content/uploads/2019/01/comment.png"><span class="comment"><?php echo $val["comment"]; ?></span></span>
+            </a>
         </div>
     </div>
 <?php } ?>
