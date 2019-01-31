@@ -10,8 +10,13 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="/wp-content/themes/simplicity2-child/js/get_args.js"></script>
     <script src="/wp-content/themes/simplicity2-child/js/category.js"></script>
+    <script src="/wp-content/themes/simplicity2-child/js/question_descript.js"></script>
     <script src="/wp-content/themes/simplicity2-child/js/fix_wrapper_height.js"></script>
     <link rel="stylesheet" href="/wp-content/themes/simplicity2-child/style/QA_Question.css">
+    <script>
+        question_id = "<?php echo $post->ID;?>";
+        reload_time = 1000 * 100
+    </script>
     <?php echo $contents->noindex; ?>
     <meta name="description" content="<?php echo $contents->title; ?>"/>
 </head>
@@ -63,18 +68,17 @@
                 <div class="clear"></div>
                 <div style="float: left">コメント</div>
                 <div class="clear"></div>
-                <?php foreach ($contents->question["comments"] as $key => $commnet) { ?>
-                    <div class="comment">
-                        <div style="width: 400px;background-color: #FFFFFF;border-radius: 5px;float: left;margin-left: 40px">
-                            <div style="color:#ACE698"><?php echo $commnet["tag"]; ?></div>
-                            <div><?php echo $commnet["comment"]; ?></div>
-                            <div style="float: right;color:#ACE698;border-radius: 7px;border: #ACE698;border-style: solid;border-width: 1px;text-align: center;width: 80px;font-size: 16px;">
-                                共感&nbsp<?php echo $commnet["like"]; ?><img
-                                        src="/wp-content/uploads/2019/01/goodjob.png" height="16" width="16"/></div>
+                <div class="comment" v-for="{user,like,comment,thumbnail} in comments">
+                    <div style="width: 400px;background-color: #FFFFFF;border-radius: 5px;float: left;margin-left: 40px">
+                        <div style="color:#ACE698">{{user}}</div>
+                        <div>{{comment}}</div>
+                        <div style="float: right;color:#ACE698;border-radius: 7px;border: #ACE698;border-style: solid;border-width: 1px;text-align: center;width: 80px;font-size: 16px;">
+                            共感&nbsp{{like}}
+                            <img src="/wp-content/uploads/2019/01/goodjob.png" height="16" width="16"/>
                         </div>
-                        <img src="/wp-content/uploads/2019/01/icon.png" height="40" width="40" style="float: left;margin: 30px 0px 0px 40px"/>
                     </div>
-                <?php } ?>
+                    <img :src="thumbnail" height="40" width="40" style="float: left;margin: 30px 0px 0px 40px"/>
+                </div>
             </div>
 
         </section>
