@@ -14,7 +14,7 @@
     <script src="/wp-content/themes/simplicity2-child/js/fix_wrapper_height.js"></script>
     <link rel="stylesheet" href="/wp-content/themes/simplicity2-child/style/QA_Question.css">
     <script>
-        question_id = "<?php echo $post->ID;?>";
+        question_id = "<?php echo ((get_post_custom($post->ID))["questionid"][0]);?>";
         reload_time = 1000 * 100
     </script>
     <?php echo $contents->noindex; ?>

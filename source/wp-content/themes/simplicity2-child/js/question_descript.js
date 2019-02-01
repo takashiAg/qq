@@ -31,7 +31,6 @@ setInterval(setdata, reload_time)
 setdata()
 
 async function setdata() {
-    question_id = 930// this is dummy ID. so if you need to deploy, comment out this line.
     if (question_id === undefined) {
         console.error("no id");
         return
@@ -49,11 +48,11 @@ async function setdata() {
         )
     }
     question_data.comments = serialized_data
-    console.log(data)
 
 }
 
 async function get_question_answer(id) {
     var client = new HttpClient();
-    return JSON.parse(await client.get('https://api.minnadekaigo.com/api/hk/questions/' + id + '/answers/'));
+    let target_url = 'https://api.minnadekaigo.com/api/hk/questions/' + id + '/answers/'
+    return JSON.parse(await client.get(target_url));
 }
