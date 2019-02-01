@@ -6,7 +6,9 @@
         z-index: 2;
     }
 }
-
+nav {
+    background: #ffffff;
+}
 
 html {
     text-align: center;
