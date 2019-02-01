@@ -3,6 +3,7 @@
 }
 
 .question_wrapper {
+    margin: 10px;
     border-radius: 5px;
     max-width: 440px;
     background-color: #FFFFFF;
@@ -17,7 +18,12 @@
     padding: 20px;
 }
 
+.question_wrapper_2 {
+    margin-top: 10px;
+}
+
 .question {
+    padding-bottom: 20px;
     background-color: #FBFBFB;
 }
 

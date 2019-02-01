@@ -42,42 +42,45 @@
     <div id="main">
         <section id="question">
             <div class="tag"><?php echo $contents->question["tag"]; ?></div>
+            <div style="width: 100%;height: 30px;opacity:0"></div>
             <div class="question">
-                <div class="question_wrapper">
-                    <div class="padding">
-                        <div class="title"><?php echo $contents->question["title"]; ?></div>
-                        <div style="margin-top: 10px">
-                            <div style="float: left;text-align: left">
-                                <div><span style="color: #ACE698;"><?php echo $contents->question["user"]; ?></span>&nbsp&nbsp<?php echo $contents->question["age"]; ?>才</div>
-                                <div class="target"><?php echo $contents->question["target"]; ?></div>
+                <div class="question_wrapper_2">
+                    <div class="question_wrapper">
+                        <div class="padding">
+                            <div class="title"><?php echo $contents->question["title"]; ?></div>
+                            <div style="margin-top: 10px">
+                                <div style="float: left;text-align: left">
+                                    <div><span style="color: #ACE698;"><?php echo $contents->question["user"]; ?></span>&nbsp&nbsp<?php echo $contents->question["age"]; ?>才</div>
+                                    <div class="target"><?php echo $contents->question["target"]; ?></div>
+                                </div>
+                                <div style="float: right;margin-right: 20px">
+                                    <img src="/wp-content/uploads/2019/01/like.png"><span class="like"><?php echo $contents->question["like"]; ?></span>
+                                    <img src="/wp-content/uploads/2019/01/comment.png"><span class="comment"><?php echo count($contents->question["comments"]); ?></span>
+                                </div>
                             </div>
-                            <div style="float: right;margin-right: 20px">
-                                <img src="/wp-content/uploads/2019/01/like.png"><span class="like"><?php echo $contents->question["like"]; ?></span>
-                                <img src="/wp-content/uploads/2019/01/comment.png"><span class="comment"><?php echo count($contents->question["comments"]); ?></span>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                        <hr color="#DEDEDE">
+                            <div class="clear"></div>
+                            <hr color="#DEDEDE">
 
-                        <div style="width: 100%;margin-top: 10px">
-                            <pre class="message"><?php echo $contents->question["message"]; ?></pre>
+                            <div style="width: 100%;margin-top: 10px">
+                                <pre class="message"><?php echo $contents->question["message"]; ?></pre>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <img src="/wp-content/uploads/2019/01/icon.png" class="icon">
-                <div class="clear"></div>
-                <div style="float: left">コメント</div>
-                <div class="clear"></div>
-                <div class="comment" v-for="{user,like,comment,thumbnail} in comments">
-                    <div style="width: 400px;background-color: #FFFFFF;border-radius: 5px;float: left;margin-left: 40px">
-                        <div style="color:#ACE698">{{user}}</div>
-                        <div>{{comment}}</div>
-                        <div style="float: right;color:#ACE698;border-radius: 7px;border: #ACE698;border-style: solid;border-width: 1px;text-align: center;width: 80px;font-size: 16px;">
-                            共感&nbsp{{like}}
-                            <img src="/wp-content/uploads/2019/01/goodjob.png" height="16" width="16"/>
+                    <img src="/wp-content/uploads/2019/01/icon.png" class="icon">
+                    <div class="clear"></div>
+                    <div style="float: left">コメント</div>
+                    <div class="clear"></div>
+                    <div class="comment" v-for="{user,like,comment,thumbnail} in comments">
+                        <div style="width: 400px;background-color: #FFFFFF;border-radius: 5px;float: left;margin-left: 40px">
+                            <div style="color:#ACE698">{{user}}</div>
+                            <div>{{comment}}</div>
+                            <div style="float: right;color:#ACE698;border-radius: 7px;border: #ACE698;border-style: solid;border-width: 1px;text-align: center;width: 80px;font-size: 16px;">
+                                共感&nbsp{{like}}
+                                <img src="/wp-content/uploads/2019/01/goodjob.png" height="16" width="16"/>
+                            </div>
                         </div>
+                        <img :src="thumbnail" height="40" width="40" style="float: left;margin: 30px 0px 0px 40px"/>
                     </div>
-                    <img :src="thumbnail" height="40" width="40" style="float: left;margin: 30px 0px 0px 40px"/>
                 </div>
             </div>
 
