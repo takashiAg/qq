@@ -39,6 +39,9 @@ window.addEventListener("DOMContentLoaded", function () {
         {category: "元気報告", color: {background: "#71DEDE"}, img_source: "https://hajimetenokaigo.jp/wp-content/uploads/2019/01/icon_report.png"},
         {category: "雑談", color: {background: "#87EFEF"}, img_source: "https://hajimetenokaigo.jp/wp-content/uploads/2019/01/icon_chat.png"}
     ]
+    for (var category of categories) {
+        category.active = translate_category[category.category] === args.path[2]
+    }
     for (var index  in categories) {
         categories[index].href = "/minnadekaigo/" + translate_category[categories[index].category]
     }

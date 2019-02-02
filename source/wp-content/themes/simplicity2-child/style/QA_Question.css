@@ -2,3 +2,11 @@
 @import url("question_descript.css");
 @import url("category.css");
 @import url("page.css");
+@media (max-width: 767px) {
+    #sidebar_left {
+        display: none;
+        position: absolute;
+        top: 0px;
+        z-index: 2;
+    }
+}

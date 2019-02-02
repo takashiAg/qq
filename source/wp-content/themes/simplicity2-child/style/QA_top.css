@@ -1,3 +1,11 @@
 @import url("index.css");
 @import url("question.css");
 @import url("category.css");
+@media (max-width: 767px) {
+    #sidebar_left {
+        display: none;
+        position: absolute;
+        top: 0px;
+        z-index: 2;
+    }
+}

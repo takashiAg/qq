@@ -2,3 +2,57 @@
 @import url("question.css");
 @import url("category.css");
 @import url("page.css");
+
+@media (max-width: 767px) {
+
+    .category_wrapper {
+        width: 180px;
+        height: 41px;
+    }
+
+    .category_wrapper > * {
+        display: inline-block;
+        float: left;
+    }
+
+    #sidebar_left {
+        width: 100%;
+    }
+
+    #category {
+        white-space: nowrap;
+        display: inline-block;
+        -webkit-overflow-scrolling: touch;
+        overflow-scrolling: touch;
+        float: none;
+        height: 41px;
+        width: 90%;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+
+    #attention, #category2,
+    #category_list {
+        display: none;
+    }
+}
+
+#category .for_SM {
+    display: inline-block;
+    font-size: 10px;
+    width: 100px;
+    height: 41px;
+    color: #4F4F4F;
+}
+
+
+#category .for_SM span {
+    display: inline-block;
+    padding: 10px;
+    height: calc(39px - (10px * 2));
+}
+
+#category .for_SM hr {
+    margin: 0;
+    padding: 0;
+}

@@ -18,6 +18,8 @@
     <script src="/wp-content/themes/simplicity2-child/js/attention.js"></script>
     <script src="/wp-content/themes/simplicity2-child/js/category2.js"></script>
     <script src="/wp-content/themes/simplicity2-child/js/fix_wrapper_height.js"></script>
+    <style>
+    </style>
     <?php echo $noindex; ?>
     <meta name="description" content="<?php echo $meta; ?>"/>
 </head>
@@ -26,13 +28,18 @@
 <div id="content_wrapper">
     <div id="sidebar_left">
         <div id="category">
-            <div class="category" style="font-size: 20px;text-align: center"><span>カテゴリ一覧</span><img src="/wp-content/uploads/2019/01/next.png"/></div>
-            <a v-for="category in categories" :href="category.href" style="color: #4F4F4F">
+            <div class="category for_PC" style="font-size: 20px;text-align: center" id="category_list"><span>カテゴリ一覧</span><img src="/wp-content/uploads/2019/01/next.png"/></div>
+            <a v-for="category in categories" :href="category.href" style="color: #4F4F4F;width: 180px" class="category_wrapper for_PC">
                 <div class="category">
                     <span style="width: 8px" :style="category.color"></span>
                     <img :src="category.img_source">
                     <span class="category_name">{{category.category}}</span>
                 </div>
+            </a>
+            <a v-for="category in categories" :href="category.href" class="for_SM">
+                <span>{{category.category}}</span>
+                <hr color="#ACE698" v-if=" category.active">
+                <hr color="#FFFFFF" v-else>
             </a>
         </div>
         <div id="attention">

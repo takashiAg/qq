@@ -1,9 +1,22 @@
-@media (max-width: 700px) {
-    #sidebar_left {
+@media (max-width: 767px) {
+    .for_PC {
         display: none;
-        position: absolute;
-        top: 0px;
-        z-index: 2;
+    }
+
+    #sidebar_left {
+        width: 100%;
+        margin: 0px !important;
+    }
+    #category{
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media (min-width: 766px) {
+
+    .for_SM {
+        display: none;
     }
 }
 
@@ -32,7 +45,7 @@ nav {
     text-align: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
     #sidebar_right {
         float: none;
         display: none;
@@ -45,7 +58,7 @@ nav {
     }
 }
 
-@media (min-width: 701px) {
+@media (min-width: 766px) {
     #sidebar_right {
         width: 220px;
         float: right;
