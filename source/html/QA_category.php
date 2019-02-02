@@ -71,10 +71,10 @@
                     <img class="number" src="/wp-content/uploads/2019/01/prev.png" height="16" width="15"/></a>
                 <?php foreach ($quesition_array as $key => $val) { ?>
                     <a class="number" href="<?php echo basename($_SERVER['PHP_SELF']) . "?" . (isset($_GET[$category]) ? "category=" . $_GET[$category] . "&" : "") . "page=" . $key; ?>"
-                       style="color: #4F4F4F"><?php echo $key; ?></a>
+                       style="color: #4F4F4F"><?php echo $key + 1; ?></a>
                 <?php } ?>
                 <a class="number"
-                   href="<?php echo basename($_SERVER['PHP_SELF']) . "?" . (isset($_GET[$category]) ? "category=" . $_GET[$category] . "&" : "") . "page=" . ($page >= count($quesition_array) - 1 ? count($quesition_array) - 1 : $page); ?>"
+                   href="<?php echo basename($_SERVER['PHP_SELF']) . "?" . (isset($_GET[$category]) ? "category=" . $_GET[$category] . "&" : "") . "page=" . ($page >= count($quesition_array) - 1 ? count($quesition_array) - 1 : $page + 1); ?>"
                    style="color: #4F4F4F"><img class="number" src="/wp-content/uploads/2019/01/next.png" height="16" width="15"/></a>
 
             </div>
