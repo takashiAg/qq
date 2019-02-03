@@ -3,12 +3,12 @@ window.addEventListener("DOMContentLoaded", function () {
         el: '#attention',
         data: {
             words: [
-                {name: "介護保険", href: "/top"},
-                {name: "認知症", href: "/top"},
-                {name: "年末調整", href: "/top"},
-                {name: "要介護認定", href: "/top"},
-                {name: "介護報酬", href: "/top"},
-                {name: "骨折", href: "/top"}
+                {name: "介護保険", href: "/minnadekaigo/mk_insurance/"},
+                {name: "認知症", href: "/minnadekaigo/mk_cognition/"},
+                {name: "解除器具", href: "/minnadekaigo/mk_device/"},
+                {name: "要介護認定", href: "/minnadekaigo/mk_certification/"},
+                {name: "元気報告", href: "/minnadekaigo/mk_report/"},
+                {name: "食事", href: "/minnadekaigo/mk_food/"}
             ]
         }
     })
