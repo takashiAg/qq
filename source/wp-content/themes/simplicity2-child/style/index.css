@@ -134,11 +134,8 @@ a {
 
 div#main {
     background: #FFFFFF;
-    border-style: solid;
-    border-width: 2px 0px 0px 0px;
     margin: 0px 10px 0px 0px;
-    padding: 10px;
-    border-color: #ACE698;
+    padding: 0px;
 }
 
 div#sidebar_right {
