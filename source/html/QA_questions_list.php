@@ -79,11 +79,12 @@
             <div class="question" v-for="{category,message,age,name,target,like,comment} in questions">
                 <div>
                     <a href="#">
-                        <object><a class="tag">{{category}}</a></object>
+                        <div class="tag">{{category}}</div>
                         <div class="message">{{message}}</div>
                         <img src="/wp-content/uploads/2019/01/icon.png" class="icon">
                         <div class="info">
-                            <div class="name">{{age}}{{name}}才</div>
+                            <div class="name" v-if='age=="None"'>{{name}}</div>
+                            <div class="name" v-else>{{name}}&nbsp;&nbsp;&nbsp;&nbsp;{{age}}才</div>
                             <div class="target">{{target}}</div>
                         </div>
                         <span class="likeandcomment"><img src="/wp-content/uploads/2019/01/like.png"><span class="like">{{like}}</span><img

@@ -53,11 +53,6 @@ class Contents
                     "comment" => "お疲れ様です。注意はしなくてもいいのではないでしょうか？職員としては正直うるさいと思う時もあると思いますが、本当に助かっている時もあると思います。お母様は、お世話好きなのでしょうか？お母様が楽しく過ごされているなら気にされなくていいと思います。"
                 ),
                 array(
-                    "user" => "かかk",
-                    "like" => 1,
-                    "comment" => "test message/test message/test message/test message/test message/test message/test message/test message/test message/test message/test message/test message/test message/test message/test message/test message/test message/test message/test message/test message/test message/"
-                ),
-                array(
                     "user" => "ぷら",
                     "like" => 1,
                     "comment" => "お疲れ様です。注意はしなくてもいいのではないでしょうか？職員としては正直うるさいと思う時もあると思いますが、本当に助かっている時もあると思います。お母様は、お世話好きなのでしょうか？お母様が楽しく過ごされているなら気にされなくていいと思います。"
