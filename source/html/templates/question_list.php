@@ -30,129 +30,49 @@ $questions = array(
         "雑談" => "雑談・つぶやきのカテゴリです。介護をしている中で大きな悩みや相談事ではないけど誰かに聞いてもらいたいことありますよね。日頃の悩みや不満をつぶやいてみましょう。",
         "その他" => "その他の質問に関するカテゴリです。介護生活でのちょっとした疑問など、どこのカテゴリにも当てはまらない場合はこのカテゴリで質問してください。また、介護に関する悩みでどのカテゴリで質問すればいいかわからない時にもまずはこのカテゴリで聞いてみましょう。",
     ),
-    "questions" => array(
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "1ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "2ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "3ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "4ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "5ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "6ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "7ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "8ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "9ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "10ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "11ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "12ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "13ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "14ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "15ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "16ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "17ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "18ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "19ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "20ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "21ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "22ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "23ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "24ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "25ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "26ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "27ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "28ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "29ページ目"
-        ),
-        array(
-            "category" => "認知症", "like" => 15, "comment" => 8, "name" => "tomotomo", "age" => 50, "target" => "(要介護1/90才/男性)",
-            "message" => "30ページ目"
-        ),
-    )
+    "questions" => get_question_list(100)
 );
+
+function get_question_list($count)
+{
+    $pickup = array(
+        'post_type' => 'mkquestion',
+        'tax_query' => array(
+            array(
+                'post_type' => 'mkquestion',
+            ),
+        ),
+    );
+    $pickup_query = new WP_Query($pickup);
+    $data = array();
+    $index = 0;
+    while ($pickup_query->have_posts() && $index++ < $count) : $pickup_query->the_post();
+        $tile = get_the_title();
+        $content = get_the_content();
+        $id = get_the_id();
+        $question = get_post_custom($id);
+        $category = array(
+            "slug" => get_the_category()[0]->slug,
+            "name" => get_the_category()[0]->name
+        );
+        array_push($data, array($tile, $content, $id, $question, $category));
+    endwhile; // end of the loop.
+    $return_data = array();
+    foreach ($data as $key => $value) {
+        array_push($return_data, array(
+            "id" => $value[2],
+            "category" => $value[4]["name"],
+            "slug" => $value[4]["slug"],
+            "like" => 15,
+            "comment" => 8,
+            "name" => $value[0],
+            "age" => $value[3]["age"][0],
+            "target" => "(" . $value[3]["thecare"][0] . ")",
+            "message" => $value[1]
+        ));
+    }
+    return $return_data;
+}
 
 function serialized_question($questions, $question_per_page)
 {
@@ -174,39 +94,3 @@ if (count($quesition_array) - 1 < $page) {
     $page = count($quesition_array) - 1;
 }
 ?>
-
-
-<?php foreach ($quesition_array[$page] as $key => $val) { ?>
-    <div class="question">
-        <div>
-            <a href="#">
-                <object><a class="tag"><?php echo $val["category"]; ?></a></object>
-                <div class="message"><?php echo $val["message"]; ?></div>
-                <img src="/wp-content/uploads/2019/01/icon.png" class="icon">
-                <div class="info">
-                    <div class="name"><?php echo $val["name"]; ?><?php echo $val["age"]; ?>才</div>
-                    <div class="target"><?php echo $val["target"]; ?></div>
-                </div>
-                <span class="likeandcomment"><img src="/wp-content/uploads/2019/01/like.png"><span class="like"><?php echo $val["like"]; ?></span><img
-                            src="/wp-content/uploads/2019/01/comment.png"><span class="comment"><?php echo $val["comment"]; ?></span></span>
-            </a>
-        </div>
-    </div>
-<?php } ?>
-<div class="page center">
-    <!--    <img class="number" src="/wp-content/uploads/2019/01/prev.png" height="16" width="15"/>-->
-    <a class="number" href="<?php echo basename($_SERVER['PHP_SELF']) . "?" . (isset($_GET[$category]) ? "category=" . $_GET[$category] . "&" : "") . "page=" . ($page <= 0 ? 0 : $page - 1); ?>"
-       style="color: #4F4F4F">
-        <img class="number" src="/wp-content/uploads/2019/01/prev.png" height="16" width="15"/></a>
-    <?php foreach ($quesition_array as $key => $val) { ?>
-        <a class="number" href="<?php echo basename($_SERVER['PHP_SELF']) . "?" . (isset($_GET[$category]) ? "category=" . $_GET[$category] . "&" : "") . "page=" . $key; ?>"
-           style="color: #4F4F4F"><?php echo $key; ?></a>
-    <?php } ?>
-    <a class="number"
-       href="<?php echo basename($_SERVER['PHP_SELF']) . "?" . (isset($_GET[$category]) ? "category=" . $_GET[$category] . "&" : "") . "page=" . ($page >= count($quesition_array) - 1 ? count($quesition_array) - 1 : $page); ?>"
-       style="color: #4F4F4F"><img class="number" src="/wp-content/uploads/2019/01/next.png" height="16" width="15"/></a>
-
-</div>
-
-
-
