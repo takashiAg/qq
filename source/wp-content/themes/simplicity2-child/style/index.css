@@ -7,7 +7,8 @@
         width: 100%;
         margin: 0px !important;
     }
-    #category{
+
+    #category {
         margin: 0;
         width: 100%;
     }
@@ -16,7 +17,7 @@
 @media (min-width: 766px) {
 
     .for_SM {
-        display: none;
+        display: none !important;
     }
 }
 
