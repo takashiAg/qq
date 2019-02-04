@@ -14,9 +14,6 @@
     }
 
     div#main {
-        /*width: calc(100% - 220px - 180px - 30px);*/
-        /*display: inline-block;*/
-
         overflow: hidden;
         width: 100% !important;
         margin: 6px;
@@ -98,7 +95,12 @@ div#main {
 
     overflow: hidden;
     width: auto;
-    margin: 6px;
+}
+
+div#main {
+    background: #FBFBFB;
+    margin: 0px 10px 0px 0px;
+    padding: 0 10px;
 }
 
 
@@ -139,12 +141,6 @@ a {
 
 #content_wrapper {
     height: 100%;
-}
-
-div#main {
-    background: #FFFFFF;
-    margin: 0px 10px 0px 0px;
-    padding: 0px;
 }
 
 div#sidebar_right {
