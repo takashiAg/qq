@@ -110,9 +110,15 @@ div#main {
     background: #ACE698 !important;
     border-radius: 3px;
     font-size: 14px;
-    display: block;
     text-align: center;
     color: #FFFFFF;
+    display: inline-block;
+    float: left;
+    padding: 0px 4px;
+}
+
+.tag + * {
+    clear: left;
 }
 
 footer {
