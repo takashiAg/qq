@@ -42,7 +42,7 @@ class Contents
             "tag" => "認知症",
             "user" => $data["username"][0],
             "age" => $data["age"][0],
-            "target" => str_replace("IND", "自立・非介護",$data["thecare"][0]),
+            "target" => str_replace("null/", "", str_replace("IND", "自立・非介護",$data["thecare"][0])),
             "sex" => $data["sex"][0],
             "message" => $p->post_content,
             "like" => 15,
