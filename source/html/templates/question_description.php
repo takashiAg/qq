@@ -2,7 +2,7 @@
 
 class Contents
 {
-    private $title_length = 35;
+    private $title_length = 15;
     public $noindex = "";
     public $meta = "";
     public $title = "";
@@ -42,7 +42,7 @@ class Contents
             "tag" => "認知症",
             "user" => $data["username"][0],
             "age" => $data["age"][0],
-            "target" => str_replace("null/", "", str_replace("IND", "自立・非介護",$data["thecare"][0])),
+            "target" => str_replace("null/", "", str_replace("IND", "自立・非介護", $data["thecare"][0])),
             "sex" => $data["sex"][0],
             "message" => $p->post_content,
             "like" => 15,
@@ -71,9 +71,17 @@ class Contents
             $this->noindex = "";
         }
 
-        $this->meta = "質問：" . $this->question["title"] . count($this->question["comments"]) . "件の回答";
 
-        $this->title = "質問：" . $this->question["title"] . count($this->question["comments"]) . "件の回答" . " | みんなで介護";
+        //↓↓↓↓ like that ↓↓↓↓
+        //<title id="title">認知症の相談「要介護認定されてから車椅子やベ...」byたかゆこ | みんなで介護</title>
+        $user = $this->question["user"] . "";
+        $target = $this->question["target"] . "";
+        $tag = $this->question["tag"] . "";
+        $title = mb_substr($this->question["message"], 0, 15) . "";
+        $short_message = mb_substr($this->question["message"], 0, 43) . "";
+        $count = count($this->question["comments"]) . "";
+        $this->title = $tag . "の相談「" . $title . "...」by" . $user . " | みんなで介護";
+        $this->meta = "家族介護の相談アプリ「みんなで介護」に投稿された" . $tag . "の相談です。「" . $short_message . "...」" . $count . "件の回答 by" . $user ."(". $target . ") | みんなで介護";
     }
 }
 
