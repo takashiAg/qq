@@ -196,7 +196,7 @@ foreach ($q as $key => $value) {
         "comment" => 8,
         "name" => $value[0],
         "age" => $value[3]["age"][0],
-        "target" => "(" . $value[3]["thecare"][0] . ")",
+        "target" => "(" . str_replace("IND", "自立・非介護", $value[3]["thecare"][0]) . ")",
         "message" => $value[1]
     ));
 }
