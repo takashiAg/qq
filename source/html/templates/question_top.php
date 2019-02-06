@@ -51,6 +51,14 @@ class question
                 "message" => $value[1]
             ));
         }
+        $id = array();
+        // foreachで1つずつ値を取り出す
+        foreach ($return_data as $key => $value) {
+            $id[$key] = $value['id'];
+        }
+
+        // array_multisortで'id'の列を昇順に並び替える
+        array_multisort($id, SORT_ASC, $return_data);
         return $return_data;
     }
 

@@ -200,6 +200,14 @@ foreach ($q as $key => $value) {
         "message" => $value[1]
     ));
 }
+$id = array();
+// foreachで1つずつ値を取り出す
+foreach ($questions["questions"] as $key => $value) {
+    $id[$key] = $value['id'];
+}
+
+// array_multisortで'id'の列を昇順に並び替える
+array_multisort($id, SORT_ASC, $questions["questions"]);
 
 function serialized_question($questions, $question_per_page)
 {
