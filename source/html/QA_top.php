@@ -50,7 +50,7 @@
                 <div class="question">
                     <div>
                         <a href="/mkquestion/<?php echo $val["id"]; ?>">
-                            <object><a class="tag" style="color: #FFFFFF" href="/minnadekaigo/<?php echo $val["slug"]; ?>/"><?php echo $val["category"]; ?></a></object>
+                            <span class="tag" style="color: #FFFFFF"><?php echo $val["category"]; ?></span>
                             <div class="message"><?php echo $val["message"]; ?></div>
                             <img src="/wp-content/uploads/2019/01/icon.png" class="icon">
                             <div class="info">
@@ -77,7 +77,7 @@
                 <div class="question">
                     <div>
                         <a href="/mkquestion/<?php echo $val["id"]; ?>">
-                            <object><a class="tag" style="color: #FFFFFF" href="/minnadekaigo/<?php echo $val["slug"]; ?>/"><?php echo $val["category"]; ?></a></object>
+                            <span class="tag" style="color: #FFFFFF" href="/minnadekaigo/<?php echo $val["slug"]; ?>/"><?php echo $val["category"]; ?></span>
                             <div class="message"><?php echo $val["message"]; ?></div>
                             <img src="/wp-content/uploads/2019/01/icon.png" class="icon">
                             <div class="info">
