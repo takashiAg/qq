@@ -54,7 +54,7 @@
                             <div class="message"><?php echo $val["message"]; ?></div>
                             <img src="/wp-content/uploads/2019/01/icon.png" class="icon">
                             <div class="info">
-                                <div class="name"><?php echo $val["name"]; ?><?php echo $val["age"]; ?>才</div>
+                                <div class="name"><?php echo $val["name"]; ?>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $val["age"]; ?>才</div>
                                 <div class="target"><?php echo $val["target"]; ?></div>
                             </div>
                             <span class="likeandcomment">
@@ -81,7 +81,7 @@
                             <div class="message"><?php echo $val["message"]; ?></div>
                             <img src="/wp-content/uploads/2019/01/icon.png" class="icon">
                             <div class="info">
-                                <div class="name"><?php echo $val["name"]; ?><?php echo $val["age"]; ?>才</div>
+                                <div class="name"><?php echo $val["name"]; ?>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $val["age"]; ?>才</div>
                                 <div class="target"><?php echo $val["target"]; ?></div>
                             </div>
                             <span class="likeandcomment"><img src="/wp-content/uploads/2019/01/like.png"><span class="like"><?php echo $val["like"]; ?></span><img
