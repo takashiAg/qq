@@ -49,7 +49,7 @@
             <?php foreach ($quesition_array[$page] as $key => $val) { ?>
                 <div class="question">
                     <div>
-                        <a href="#">
+                        <a href="/mkquestion/<?php echo $val["id"]; ?>">
                             <span class="tag" style="color: #FFFFFF"><?php echo $val["category"]; ?></span>
                             <div class="message"><?php echo $val["message"]; ?></div>
                             <img src="/wp-content/uploads/2019/01/icon.png" class="icon">

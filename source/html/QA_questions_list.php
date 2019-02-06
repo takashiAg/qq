@@ -76,9 +76,9 @@
             </div>
 
 
-            <div class="question" v-for="{category,message,age,name,target,like,comment} in questions">
+            <div class="question" v-for="{id,category,message,age,name,target,like,comment} in questions">
                 <div>
-                    <a href="#">
+                    <a :href="'/mkquestion/' + id">
                         <div class="tag">{{category}}</div>
                         <div class="message">{{message}}</div>
                         <img src="/wp-content/uploads/2019/01/icon.png" class="icon">

@@ -49,7 +49,7 @@
             <?php foreach ($questions->popularity() as $key => $val) { ?>
                 <div class="question">
                     <div>
-                        <a href="#">
+                        <a href="/mkquestion/<?php echo $val["id"]; ?>">
                             <object><a class="tag" style="color: #FFFFFF" href="/minnadekaigo/<?php echo $val["slug"]; ?>/"><?php echo $val["category"]; ?></a></object>
                             <div class="message"><?php echo $val["message"]; ?></div>
                             <img src="/wp-content/uploads/2019/01/icon.png" class="icon">
@@ -76,7 +76,7 @@
             <?php foreach ($questions->newest() as $key => $val) { ?>
                 <div class="question">
                     <div>
-                        <a href="#">
+                        <a href="/mkquestion/<?php echo $val["id"]; ?>">
                             <object><a class="tag" style="color: #FFFFFF" href="/minnadekaigo/<?php echo $val["slug"]; ?>/"><?php echo $val["category"]; ?></a></object>
                             <div class="message"><?php echo $val["message"]; ?></div>
                             <img src="/wp-content/uploads/2019/01/icon.png" class="icon">
