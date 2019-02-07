@@ -51,9 +51,10 @@ function get_question_list($count)
         $content = get_the_content();
         $id = get_the_id();
         $question = get_post_custom($id);
+        $terms = get_the_terms($id,"minnadekaigo");
         $category = array(
-            "slug" => get_the_category()[0]->slug,
-            "name" => get_the_category()[0]->name
+            "slug" => $terms[0]->slug,
+            "name" => $terms[0]->name
         );
         array_push($data, array($tile, $content, $id, $question, $category));
     endwhile; // end of the loop.
