@@ -92,7 +92,7 @@
             <?php } ?>
             <div>
                 <img src="/wp-content/uploads/2019/01/next_red.png" style="float: right;margin-right: 10px">
-                <span style="float: right;color: #FF6969;margin-right: 15px;font-size: 16px">新着の質問とアドバイスをもっと見る</span>
+                <span style="float: right;color: #FF6969;margin-right: 15px;font-size: 16px"><a href="/mk-question-list/" style="float: right;color: #FF6969;margin-right: 15px;font-size: 16px">新着の質問とアドバイスをもっと見る</a></span>
             </div>
         </section>
     </div>
