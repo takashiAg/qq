@@ -31,7 +31,7 @@ class question
             $content = get_the_content();
             $id = get_the_id();
             $question = get_post_custom($id);
-            $terms = get_the_terms($id,"minnadekaigo");
+            $terms = get_the_terms($id, "minnadekaigo");
             $category = array(
                 "slug" => $terms[0]->slug,
                 "name" => $terms[0]->name
@@ -48,7 +48,7 @@ class question
                 "comment" => 8,
                 "name" => $value[3]["username"][0],
                 "age" => $value[3]["age"][0],
-                "target" => "(" . str_replace("null/", "", str_replace("IND", "自立・非介護", $value[3]["thecare"][0])) . ")",
+                "target" => compile_target($value[3]["thecare"][0]),
                 "message" => $value[1]
             ));
         }
@@ -105,6 +105,34 @@ class question
             "message" => "新着の質問3"
         ),
     );
+}
+
+function compile_target($text)
+{
+    $reg = preg_match('/([A-Za-z]*)(\d{0,1})\/(\d{2})\/(.*)/', $text, $matches);
+    if ($reg == 0)
+        return "";
+
+    $kaigodo = "";
+    $slash = true;
+    if ($matches[1] == "SN") {
+        $kaigodo = "要支援";
+    } else if ($matches[1] == "NS") {
+        $kaigodo = "要介護";
+    } else if ($matches[1] == "IND") {
+        $kaigodo = "自立・非介護";
+    } else if ($matches[1] == "null") {
+        $kaigodo = "";
+        $slash = false;
+    }
+
+    $age = $matches[3];
+
+    $sex =
+        $matches[4] == "male" ? "男性" :
+            $matches[4] == "female" ? "女性" :
+                "その他";
+    return "(" . $kaigodo . $matches[2] . ($slash ? "/" : "") . $age . "代/" . $sex . ")";
 }
 
 $questions = new question();

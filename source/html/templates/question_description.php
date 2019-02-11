@@ -42,7 +42,7 @@ class Contents
             "tag" => "認知症",
             "user" => $data["username"][0],
             "age" => $data["age"][0],
-            "target" => str_replace("null/", "", str_replace("IND", "自立・非介護", $data["thecare"][0])),
+            "target" => compile_target($data["thecare"][0]),
             "sex" => $data["sex"][0],
             "message" => $p->post_content,
             "like" => 15,
@@ -81,8 +81,36 @@ class Contents
         $short_message = mb_substr($this->question["message"], 0, 43) . "";
         $count = count($this->question["comments"]) . "";
         $this->title = $tag . "の相談「" . $title . "...」by" . $user . " | みんなで介護";
-        $this->meta = "家族介護の相談アプリ「みんなで介護」に投稿された" . $tag . "の相談です。「" . $short_message . "...」" . $count . "件の回答 by" . $user ."(". $target . ") | みんなで介護";
+        $this->meta = "家族介護の相談アプリ「みんなで介護」に投稿された" . $tag . "の相談です。「" . $short_message . "...」" . $count . "件の回答 by" . $user . "(" . $target . ") | みんなで介護";
     }
+}
+
+function compile_target($text)
+{
+    $reg = preg_match('/([A-Za-z]*)(\d{0,1})\/(\d{2})\/(.*)/', $text, $matches);
+    if ($reg == 0)
+        return "";
+
+    $kaigodo = "";
+    $slash = true;
+    if ($matches[1] == "SN") {
+        $kaigodo = "要支援";
+    } else if ($matches[1] == "NS") {
+        $kaigodo = "要介護";
+    } else if ($matches[1] == "IND") {
+        $kaigodo = "自立・非介護";
+    } else if ($matches[1] == "null") {
+        $kaigodo = "";
+        $slash = false;
+    }
+
+    $age = $matches[3];
+
+    $sex =
+        $matches[4] == "male" ? "男性" :
+            $matches[4] == "female" ? "女性" :
+                "その他";
+    return "(" . $kaigodo . $matches[2] . ($slash ? "/" : "") . $age . "代/" . $sex . ")";
 }
 
 //var_dump($post);
