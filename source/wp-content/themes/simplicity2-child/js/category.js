@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", function () {
         "リフォーム": "mk_reform",
         "介護保険": "mk_insurance",
         "介護器具": "mk_device",
-        "介護施設": "mk_-hospital",
+        "介護施設": "mk_hospital",
         "介護疲れ・ストレス": "mk_stress",
         "元気報告": "mk_report",
         "入浴・排泄ケア": "mk_care",
