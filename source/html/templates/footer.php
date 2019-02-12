@@ -88,18 +88,14 @@
         <span>初めての介護について</span>
         <span>カテゴリ一覧</span>
     </div>
-    <ul class="footer-category">
-        <li><a href="https://hajimetenokaigo.jp/category/family/rehabilitation/">リハビリ</a></li>
-        <li><a href="https://hajimetenokaigo.jp/category/family/reform/">介護リフォーム</a></li>
-        <li><a href="https://hajimetenokaigo.jp/category/family/fatigue/">介護疲れ・ストレス</a></li>
-        <li><a href="https://hajimetenokaigo.jp/category/family/money/">介護費用の軽減</a></li>
-        <li><a href="https://hajimetenokaigo.jp/category/family/bathe/">入浴・清潔ケア</a></li>
-        <li><a href="https://hajimetenokaigo.jp/category/family/family-how-to/">家族での進め方</a></li>
-        <li><a href="https://hajimetenokaigo.jp/category/family/excretion/">排泄・トイレ介助</a></li>
-        <li><a href="https://hajimetenokaigo.jp/category/family/mobility/">歩行・移乗の介護</a></li>
-        <li><a href="https://hajimetenokaigo.jp/category/family/assistance-instrument/">福祉用具・介護用品</a></li>
-        <li><a href="https://hajimetenokaigo.jp/category/family/dementia-symptoms/">認知症</a></li>
-        <li><a href="https://hajimetenokaigo.jp/category/family/meal/">食事サポート</a></li>
+    <ul>
+        <li><a href="/">トップページ</a></li>
+        <li><a href="/categories/">カテゴリ一覧</a></li>
+        <li><a href="/sitemap/ ">サイトマップ</a></li>
+        <li><a href="/company/">運営者情報</a></li>
+        <li><a href="/privacy-policy/">プライバシーポリシー</a></li>
+        <li><a href="/terms/">利用規約</a></li>
+        <li><a href="/contact/">お問い合わせ</a></li>
     </ul>
     <ul>
         <li><a href="https://hajimetenokaigo.jp/category/kaigo-kamo/prepare/">介護が始まるまでの準備</a></li>
