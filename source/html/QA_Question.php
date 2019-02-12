@@ -54,8 +54,9 @@
                                     <div class="target"><?php echo $contents->question["target"]; ?></div>
                                 </div>
                                 <div style="float: right;margin-right: 20px">
-                                    <img src="/wp-content/uploads/2019/01/like.png"><span class="like"><?php echo $contents->question["like"]; ?></span>
-                                    <img src="/wp-content/uploads/2019/01/comment.png"><span class="comment"><?php echo count($contents->question["comments"]); ?></span>
+                                    <!--                                    <img src="/wp-content/uploads/2019/01/like.png"><span class="like">-->
+                                    <?php //echo $contents->question["like"]; ?><!--</span>-->
+                                    <img src="/wp-content/uploads/2019/01/comment.png"><span class="comment">{{comments.length}}</span>
                                 </div>
                             </div>
                             <div class="clear"></div>
