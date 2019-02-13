@@ -30,7 +30,7 @@ $questions = array(
         "雑談" => "雑談・つぶやきのカテゴリです。介護をしている中で大きな悩みや相談事ではないけど誰かに聞いてもらいたいことありますよね。日頃の悩みや不満をつぶやいてみましょう。",
         "その他" => "その他の質問に関するカテゴリです。介護生活でのちょっとした疑問など、どこのカテゴリにも当てはまらない場合はこのカテゴリで質問してください。また、介護に関する悩みでどのカテゴリで質問すればいいかわからない時にもまずはこのカテゴリで聞いてみましょう。",
     ),
-    "questions" => get_question_list(100)
+    "questions" => get_question_list(-1)
 );
 
 function get_question_list($count)
@@ -47,7 +47,7 @@ function get_question_list($count)
     $pickup_query = new WP_Query($pickup);
     $data = array();
     $index = 0;
-    while ($pickup_query->have_posts() && $index++ < $count) : $pickup_query->the_post();
+    while ($pickup_query->have_posts() && ($index++ < $count || $count == -1)) : $pickup_query->the_post();
         $tile = get_the_title();
         $content = get_the_content();
         $id = get_the_id();

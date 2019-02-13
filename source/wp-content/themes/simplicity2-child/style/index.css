@@ -105,7 +105,7 @@ div#main {
 
 
 .tag {
-    width: 65px;
+    min-width: 65px;
     height: 21px;
     background: #ACE698 !important;
     border-radius: 3px;
