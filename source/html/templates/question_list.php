@@ -42,6 +42,7 @@ function get_question_list($count)
                 'post_type' => 'mkquestion',
             ),
         ),
+        'posts_per_page' => -1,
     );
     $pickup_query = new WP_Query($pickup);
     $data = array();

@@ -55,14 +55,14 @@
             </div>
         </div>
 
-<!--        <div id="category2">-->
-<!--            <div class="category" style="font-size: 20px;text-align: center"><span>要介護度別</span><img src="/wp-content/uploads/2019/01/next.png"/></div>-->
-<!--            <div class="category" v-for="category in categories">-->
-<!--                <span style="width: 8px" :style="category.color"></span>-->
-<!--                <div style="width: 41px;height: 41px"></div>-->
-<!--                <span class="category_name">{{category.category}}</span>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div id="category2">-->
+        <!--            <div class="category" style="font-size: 20px;text-align: center"><span>要介護度別</span><img src="/wp-content/uploads/2019/01/next.png"/></div>-->
+        <!--            <div class="category" v-for="category in categories">-->
+        <!--                <span style="width: 8px" :style="category.color"></span>-->
+        <!--                <div style="width: 41px;height: 41px"></div>-->
+        <!--                <span class="category_name">{{category.category}}</span>-->
+        <!--            </div>-->
+        <!--        </div>-->
     </div>
 
     <div id="sidebar_right">
@@ -93,11 +93,11 @@
                 </div>
             </div>
             <div class="page center">
-                <img class="number" src="/img/prev.png" height="16" width="15" v-on:click="prev()"/>
+                <img class="number" src="/wp-content/uploads/2019/01/prev.png" height="16" width="15" v-on:click="prev()"/>
                 <span class="number" v-for="index in indexes" v-on:click="change(index)">
                     {{index}}
                 </span>
-                <img class="number" src="/img/next.png" height="16" width="15" v-on:click="next()"/>
+                <img class="number" src="/wp-content/uploads/2019/01/next.png" height="16" width="15" v-on:click="next()"/>
             </div>
 
 

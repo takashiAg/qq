@@ -77,10 +77,7 @@ window.addEventListener("DOMContentLoaded", function () {
     if (quesition_array.length == 0)
         quesition_array == [[]]
 
-    var index_question = []
-    for (var index in quesition_array) {
-        index_question.push(index)
-    }
+    var index_question = make_index(quesition_array.length, 1)
 
     question = new Vue({
         el: '#questions',
@@ -95,6 +92,7 @@ window.addEventListener("DOMContentLoaded", function () {
             change: function (index) {
                 question.index = index;
                 question.questions = quesition_array[index - 0]
+                question.indexes = make_index(quesition_array.length, index)
                 window.scrollTo(0, 0);
             },
             next: function () {
@@ -108,5 +106,16 @@ window.addEventListener("DOMContentLoaded", function () {
         }
     })
 })
+
+function make_index(index_length, index) {
+    let return_array = [];
+    let index_margin = 2;
+    for (let i = index - index_margin; i < index + index_margin + 1; i++)
+        if (i > 0 && i < index_length)
+            return_array.push(i)
+    return return_array;
+
+}
+
 var quesition_array;
 var question;
