@@ -21,7 +21,7 @@
     <meta name="description" content="<?php echo $meta; ?>"/>
 </head>
 <body>
-<nav><a href="/"><img src=""><img src="/wp-content/uploads/2019/01/top.png" height="60" width="161"/></a></nav>
+<nav><a href="/mk-question-top/"><img src=""><img src="/wp-content/uploads/2019/01/top.png" height="60" width="161"/></a></nav>
 <div id="content_wrapper">
     <div id="sidebar_left">
         <div id="category">
